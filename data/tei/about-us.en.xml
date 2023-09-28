@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">About us</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName>Institut für die Geschichte der deutschen Juden</orgName>
+                    <email>redaktion@juedische-geschichte-online.net</email>
+                    <address>
+                        <addrLine>Beim Schlump 83, 20144 Hamburg</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace>Hamburg</pubPlace>
+                <date type="publication">2023-09-27</date>
+                <!--
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/de/">
+                        <p>Dieser Text basiert auf den <ref target="http://www.deutschestextarchiv.de/doku/nutzungsbedingungen">Nutzungsbestimmungen des Deutschen Textarchivs</ref> und darf gemäß den Bestimmungen der <ref target="http://creativecommons.org/licenses/by-nc/3.0/de/">CC-BY-NC 3.0</ref> für nicht-kommerzielle Zwecke in jedwedem Format oder Medium vervielfältigt und weiterverbreitet werden. </p>
+                    </licence>
+                </availability>
+                -->
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div n="3">
+                <head>Team</head>
+                <lb/>
+
+                <p><hi rendition="#b">PD Dr. Andreas Brämer (IGdJ, project leader)</hi>
+                    <lb/>
+                    Andreas Brämer is deputy director at the IGdJ. He studied at the Hochschule für Jüdische Studien Heidelberg and at the Hebrew University in Jerusalem. He received his doctorate in Jewish Studies from the Free University of Berlin – with a dissertation on Rabbi Zacharias Frankel. Before Andreas Brämer transferred to the Institute for the History of the German Jews in 1997, he worked as an academic staff member at the Hochschule für Jüdische Studien and at the Gesamthochschule Duisburg. Since his habilitation in 2006, he has also taught as a private lecturer (adjunct professor) in the Department of History at the University of Hamburg. Andreas Brämer is a member of the board of the <ref target="http://wag-leobaeck.de/">Wissenschaftliche Arbeitsgemeinschaft of the Leo Baeck Institute</ref> and chairman of the <ref target="https://gegj.de/">Gesellschaft zur Erforschung der Geschichte der Juden e. V.</ref> He is also a member of the advisory board of the <ref target="https://www.maimonides-centre.uni-hamburg.de/">Maimonides Centre for Advanced Studies – Jewish Scepticism</ref> at the University of Hamburg and a member of the advisory board of the <ref target="https://www.leobaeck.co.uk/the-lbi-year-book-2">Leo Baeck Institute Yearbook</ref>.
+                </p>
+
+                <p><hi rendition="#b">PD Dr.-Ing. habil. Ulrich Knufinke (Bet Tfila, project leader)</hi>
+                    <lb/>
+                    Ulrich Knufinke is a research associate at the Lower Saxony State Office for the Preservation of Historical Monuments, where his responsibilities in the department for the preservation of historical buildings and art include the coordination of research projects. He studied architecture and German language and literature at the Technical University of Braunschweig, where he received his doctorate in 2005. In 2014 he completed his habilitation at the University of Stuttgart. In addition to his work at the NLD, Knufinke currently teaches as a private lecturer at the TU Braunschweig, where he is the scientific director of the <ref target="http://www.bet-tfila.org/">Bet Tfila – Research Center for Jewish Architecture in Europe</ref>.</p>
+                <p>
+                    <hi rendition="#b">Dr. Sonja Dickow-Rotter (IGdJ, project staff)</hi>
+                    <lb/>
+                    Sonja Dickow-Rotter is an academic staff member at the IGdJ since 2019 and initially a project staff member of the digital source edition <ref target="https://keydocuments.net/">Key Documents of German-Jewish History</ref>. In this context, she also conceptualized and implemented online exhibitions as well as other digital formats. Sonja Dickow-Rotter studied literature and cultural anthropology at the University of Hamburg. After receiving her master’s degree, she worked as an academic staff member at the Walter A. Berendsohn Research Center for Exile Literature. Sonja Dickow-Rotter wrote her doctoral dissertation on literary configurations of house and home in contemporary Jewish literatures. Her comparative dissertation, which was awarded the University of Hamburg's Joseph Carlebach Prize in 2021, was written at the University of Hamburg and at the Hebrew University of Jerusalem. Sonja Dickow-Rotter is an alumna of the Ernst Ludwig Ehrlich Studienwerk. </p>
+                <p>
+                    <hi rendition="#b">Dipl.- Ing. Mirko Przystawik (Bet Tfila, project staff)</hi>
+                    <lb/>
+                    Mirko Przystawik studied architecture at the Technische Universität Braunschweig and has been working as architectural historian since 2005: First, he served as an research associate at the Institute for the History of Architecture and Urban Development, Department of Architectural History, and since 2007 at the Bet Tfila – Research Unit there. Parallel to this, he assumed his work at the IGdJ as an academic staff member in 2019.<lb />
+                    In various projects, he has addressed his research focus – modern Jewish architecture and material culture as well as Jewish topography, for example in the project <hi rendition="#i">“Jüdische Reform und Architektur: Die ‘Erfindung’ der Reformsynagoge im heutigen Land Niedersachsen und ihre weltweite Verbreitung im 19. Jahrhundert”</hi> (Jewish Reform and Architecture: The ‘Invention’ of the Reform Synagogue in the Present-Day State of Lower Saxony and its Worldwide Dissemination in the Nineteenth Century), 2009–2012, Bet Tfila and IGdJ. His current project at Bet Tfila is titled <hi rendition="#i"><ref target="http://bet-tfila.org/de/r-topographien.html">“Niedersachsen – Eine jüdische Topographie”</ref></hi> (Lower Saxony – A Jewish Topography). In previous projects, he did research on the Jewish rural community in Hornburg and Torah arks in German-speaking regions. </p>
+            </div>
+            <!--
+            <div n="3">
+                <head>Advisory Board</head><lb/>
+                <list>
+                    <item></item>
+                </list>
+            </div>
+            <div n="3">
+                <head>Sponsors and Partners</head><lb/>
+                <p>The <ref target="https://www.volkswagenstiftung.de/en">Volkswagen Foundation</ref> has been funding the realization of the hybrid publication project since 2023.</p>
+            </div>
+            -->
+        </body>
+    </text>
+</TEI>

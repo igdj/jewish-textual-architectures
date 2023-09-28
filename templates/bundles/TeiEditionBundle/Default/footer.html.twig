@@ -1,0 +1,42 @@
+        <footer>
+            {% if twitterSite is defined and twitterSite is not empty %}
+            <div id="footer-social" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12" style="z-index: 1; text-align: center">
+                    <a class="twitter" target="_blank" href="https://twitter.com/{{ twitterSite }}" title="@{{ twitterSite }}" rel="noopener"> </a>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            <div id="footer-navigation" class="container">
+                <div class="row">
+                    {#
+                    <div class="col-8" style="z-index: 1">
+                        {% set menu = knp_menu_get('main', [], {'position': 'footer'}) %}
+                        {{ knp_menu_render(menu) }}
+                    </div>
+                    #}
+                    <div class="col-6" style="min-height: 80px">
+                        <a href="https://igdj-hh.de/{% if 'de' != app.request.locale %}en/{% endif %}" target="_blank">
+                            <img src="{{ app.request.basepath }}/img/igdj-inverse.svg" style="bottom: 16px; height: 80px; width: auto; margin-right: 24px" alt="{{ 'Institute for the History of the German Jews'|trans }}" />
+                        </a>
+                        <a href="http://www.bet-tfila.org/" target="_blank">
+                            <img src="{{ app.request.basepath }}/img/bet-tfila-inverse.png" style="bottom: 16px; height: 80px; width: auto" alt="{{ 'Bet Tfila - Research Unit for Jewish Architecture in Europe'|trans }}" />
+                        </a>
+                    </div>
+
+                    <div class="col-6" style="z-index: 1; text-align: right">
+                        {% set menu = knp_menu_get('top', [], {'position': 'footer', 'part': 'left'}) %}
+                        {{ knp_menu_render(menu) }}
+                    </div>
+                    {#
+                    <div class="col-6 col-sm-2" style="z-index: 1">
+                        {% set menu = knp_menu_get('top', [], {'position': 'footer', 'part': 'right'}) %}
+                        {{ knp_menu_render(menu) }}
+                    </div>
+                    #}
+                    {% block footer_navigation_right %}
+                    {% endblock %}
+                </div>
+            </div>
+        </footer>

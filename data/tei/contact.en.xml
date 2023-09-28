@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Contact</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName>Institut für die Geschichte der deutschen Juden</orgName>
+                    <email>redaktion@juedische-geschichte-online.net</email>
+                    <address>
+                        <addrLine>Beim Schlump 83, 20144 Hamburg</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace>Hamburg</pubPlace>
+                <date type="publication">2023-09-27</date>
+                <!--
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/de/">
+                        <p>Dieser Text basiert auf den <ref target="http://www.deutschestextarchiv.de/doku/nutzungsbedingungen">Nutzungsbestimmungen des Deutschen Textarchivs</ref> und darf gemäß den Bestimmungen der <ref target="http://creativecommons.org/licenses/by-nc/3.0/de/">CC-BY-NC 3.0</ref> für nicht-kommerzielle Zwecke in jedwedem Format oder Medium vervielfältigt und weiterverbreitet werden. </p>
+                    </licence>
+                </availability>
+                -->
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div n="2">
+                
+                <p>
+                    If you have any questions or suggestions, you can contact us through the personal contact
+                    information linked on the <ref target="about/team">Team page</ref>.
+                </p>
+                
+                <div n="3">
+                    <head>Imprint</head>
+                    <lb/>
+                    <p>Institute for the History of the German Jews<lb/>
+                         Beim Schlump 83<lb/>
+                         20144 Hamburg<lb/>
+                    </p>
+                    <p> Tel. +49 40 – 42 838-2617<lb/>
+                         Fax +49 40 – 44 808-66<lb/>
+                         E-Mail: kontakt@igdj-hh.de<lb/>
+                         Internet: <ref target="https://www.igdj-hh.de/">www.igdj-hh.de</ref></p>
+                    <p>The Institute is a foundation under civil law under the auspices of the Free
+                        Hanseatic City of Hamburg. </p>
+                    <p>Authorized persons<lb/>
+                         Director: Dr. Kim Wünschmann<lb/>
+                         Deputy Director: PD Dr. Andreas Brämer</p>
+                    <p>Responsible for the content<lb/>
+                         Dr. Sonja Dickow-Rotter and Dipl.-Ing. Mirko Przystawik</p>
+                    <!--
+                    <p>Technical support<lb/>
+                        Daniel Burckhardt</p>
+                    <p>Design<lb/>
+                        Sandra Morath, <ref target="http://www.buero-edelweiss.de/">edelweiss* büro
+                            für grafik und design</ref></p>
+                    -->
+                    <p>Judicial authority<lb/>
+                         Justizverwaltungsamt Stiftungsangelegenheiten<lb/>
+                         Drehbahn 36, 20354 Hamburg</p>
+                </div>
+                
+                <div n="3">
+                    <head>Data Protection</head>
+                    <lb/>
+                    <p>This is an online-service of the Institute for the History of German Jews
+                        (IGdJ). The <ref target="https://igdj-hh.de/en/datenschutz">general data
+                            protection declaration</ref> of the IGdJ applies to the processing of
+                        all personal data arising in the course of the operation of this site.</p>
+                </div>
+                
+                <div n="3">
+                    <head>Liability for Links</head>
+                    <lb/>
+                    <p> Our site contains links to external websites, over which we have no
+                        influence. Therefore we can not accept any liability for this external
+                        content. The respective provider or operator of the websites is always
+                        responsible for the content of these pages. The linked pages were inspected
+                        for possible violations of law at the time of the placing of the link.
+                        Illegal contents were not apparent when the link was created. Continuous
+                        monitoring of the contents of the linked web pages is not plausible where
+                        there is no actual indication of an infringement of the law. Upon
+                        notification of violations, we will remove such links immediately. <lb/>
+                    </p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,10 @@
+# the following are from services.yaml
+# twig.globals.siteName
+Architecture and Space: Architektur und Raum
+# twig.globals.siteTagline
+An Online Anthology: Online-Anthologie
+A Publication Project:  Ein Publikationsprojekt
+# eko_feed.feeds.article.title
+"Architecture and Space - Articles": Architektur und Raum - Beiträge
+# eko_feed.feeds.article.description
+Latest Articles from the Online Anthology: Neuste Artikel in der Online-Anthologie

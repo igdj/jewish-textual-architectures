@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">About the Project</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName>Institut für die Geschichte der deutschen Juden</orgName>
+                    <email>redaktion@juedische-geschichte-online.net</email>
+                    <address>
+                        <addrLine>Beim Schlump 83, 20144 Hamburg</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace>Hamburg</pubPlace>
+                <date type="publication">2023-09-27</date>
+                <!--
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by-nc/3.0/de/">
+                        <p>Dieser Text basiert auf den <ref target="http://www.deutschestextarchiv.de/doku/nutzungsbedingungen">Nutzungsbestimmungen des Deutschen Textarchivs</ref> und darf gemäß den Bestimmungen der <ref target="http://creativecommons.org/licenses/by-nc/3.0/de/">CC-BY-NC 3.0</ref> für nicht-kommerzielle Zwecke in jedwedem Format oder Medium vervielfältigt und weiterverbreitet werden. </p>
+                    </licence>
+                </availability>
+                -->
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div n="3">
+                <!--<head>Forschungsvorhaben</head>
+                <lb/>-->
+                <p> 
+                    The <ref target="https://www.igdj-hh.de/en/">Institute for the History of the German Jews (IGdJ)</ref>, PD Dr. Andreas Brämer, and the <ref target="http://www.bet-tfila.org/">Bet Tfila - Research Unit for Jewish Architecture in Europe</ref>, PD Dr.-Ing. Ulrich Knufinke, are developing an online anthology on the topic of Jewish architecture and Jewish space. The online anthology is part of the tandem project <ref target="https://gepris.dfg.de/gepris/projekt/497336599?language=en">“Constructions of Jewish Cultural Heritage in Theoretical-Critical and Literary Texts on Architecture and Space”</ref>, which both partners are working on in the context of the <ref target="https://spp-juedisches-kulturerbe.de/en/home/">DFG Priority Program 2357 “Jewish Cultural Heritage”</ref>.
+                </p>
+                <p>
+                    <lb />The focus is on selected textual sources (fictional/non-fictional) from the Haskalah to the immediate post-World War II period (1750-1965), which are used to cast thematic spotlights on the significance of Jewish architectures, spaces, and urban places for the construction and self-understanding of Jewish cultural heritage.<lb/>
+                    Exemplarily, different text categories are treated and summarized with overview articles. Interpretive and background texts embed the individual sources in their historical contexts and provide information on the history of reception, transmission, and scholarly controversies.       
+                </p>
+                <p>
+                    The online anthology is a teaching and research tool and is primarily aimed at researchers, but is also intended to offer students, interested laypersons, and pupils insights into the historical field of tension between Jewish architecture and literature. 
+                </p>
+                <p>
+                    <lb />Users can navigate by (research) interest, access the articles via various access points (topic categories, timeline from 1750 to 1965, map, text types), and search and filter as needed. The text sources and background information are tagged, keyworded and indexed with metadata/norm data. All texts are successively made available in German as well as English.<lb/>
+                    The <ref target="https://keydocuments.net/">“Key Documents of German-Jewish History”</ref> published by the IGdJ serve as a model.
+                </p>
+                <p>
+                    If you have any queries and/or are interested in contributing as an author, please contact <ref target="https://www.igdj-hh.de/en/igdj/team/dr-sonja-dickow-rotter">Dr. Sonja Dickow-Rotter</ref> and/or <ref target="https://igdj-hh.de/en/igdj/team/dipl-ing-mirko-przystawik">Dipl.-Ing. Mirko Przystawik</ref>.
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>
