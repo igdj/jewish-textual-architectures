@@ -40,10 +40,11 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
         <body>
             <div n="2">
                 
-                <p>
-                    If you have any questions or suggestions, you can contact us through the personal contact
-                    information linked on the <ref target="about/team">Team page</ref>.
-                </p>
+                <p> If you have any questions or suggestions, you can contact us through the
+                    personal contact information linked on the team pages of  <ref
+                        target="https://www.igdj-hh.de/en/igdj/team/dr-sonja-dickow-rotter"
+                        >IGdJ</ref> and <ref target="http://www.bet-tfila.org/de/u-staff_00.html"
+                        >Bet Tfila – Research Unit</ref>. </p>
                 
                 <div n="3">
                     <head>Imprint</head>

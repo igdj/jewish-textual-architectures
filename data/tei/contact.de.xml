@@ -39,10 +39,10 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
     <text>
         <body>
             <div n="2">
-                <p>
-                    Ihre Fragen und Anregungen erreichen uns über die auf der <ref
-                        target="ueber/team">Team-Seite</ref> verlinkten persönlichen Kontaktangaben.
-                </p>
+                <p> Ihre Fragen und Anregungen erreichen uns über die auf den Team-Seiten von <ref
+                        target="https://www.igdj-hh.de/igdj/team/dr-sonja-dickow-rotter">IGdJ</ref>
+                    und <ref target="http://www.bet-tfila.org/de/u-staff_00.html">Bet Tfila –
+                        Forschungsstelle</ref> verlinkten persönlichen Kontaktangaben. </p>
 
                 <div n="3">
                     <head>Impressum</head>

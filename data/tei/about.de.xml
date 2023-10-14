@@ -6,7 +6,8 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Über das Projekt</title>
+                <title type="main">Jüdische Text-Architekturen | Räume, Plätze und Architekturen des
+                    Jüdischen in der Literatur</title>
             </titleStmt>
             <publicationStmt>
                 <publisher>
@@ -55,9 +56,12 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     <lb />Die Nutzer:innen können nach (Forschungs-)Interesse vorgehen, über verschiedene Zugänge (Themenkategorien, Zeitstrahl von 1750 bis 1965, Karte, Textsorten) zu den Beiträgen gelangen sowie nach Bedarf suchen und filtern. Die Textquellen und Hintergrundinformationen werden mit Metadaten/Normdaten ausgezeichnet, verschlagwortet und indexiert. Alle Texte werden sukzessive zweisprachig (deutsch/englisch) bereitgestellt.<lb/>
                     Als Vorbild dienen die vom IGdJ herausgegebenen <ref target="https://schluesseldokumente.net/">„Hamburger Schlüsseldokumente zur deutsch-jüdischen Geschichte“</ref>.
                 </p>
-                <p>
-                    Bei Fragen und/oder Interesse, als Autor:in einen Beitrag beizusteuern, kontaktieren Sie gerne <ref target="https://www.igdj-hh.de/igdj/team/dr-sonja-dickow-rotter">Dr. Sonja Dickow-Rotter</ref> und/oder <ref target="https://igdj-hh.de/igdj/team/dipl-ing-mirko-przystawik">Dipl.-Ing. Mirko Przystawik</ref>.
-                </p>
+                <p> Bei Fragen und/oder Interesse, als Autor:in einen Beitrag beizusteuern,
+                    kontaktieren Sie gerne <ref
+                        target="https://www.igdj-hh.de/igdj/team/dr-sonja-dickow-rotter">Dr. Sonja
+                        Dickow-Rotter</ref> und/oder <ref
+                        target="http://bet-tfila.org/de/r-anthology.html">Dipl.-Ing. Mirko
+                        Przystawik</ref>. </p>
             </div>
         </body>
     </text>

@@ -55,9 +55,12 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     <lb />Users can navigate by (research) interest, access the articles via various access points (topic categories, timeline from 1750 to 1965, map, text types), and search and filter as needed. The text sources and background information are tagged, keyworded and indexed with metadata/norm data. All texts are successively made available in German as well as English.<lb/>
                     The <ref target="https://keydocuments.net/">“Key Documents of German-Jewish History”</ref> published by the IGdJ serve as a model.
                 </p>
-                <p>
-                    If you have any queries and/or are interested in contributing as an author, please contact <ref target="https://www.igdj-hh.de/en/igdj/team/dr-sonja-dickow-rotter">Dr. Sonja Dickow-Rotter</ref> and/or <ref target="https://igdj-hh.de/en/igdj/team/dipl-ing-mirko-przystawik">Dipl.-Ing. Mirko Przystawik</ref>.
-                </p>
+                <p> If you have any queries and/or are interested in contributing as an author,
+                    please contact <ref
+                        target="https://www.igdj-hh.de/en/igdj/team/dr-sonja-dickow-rotter">Dr.
+                        Sonja Dickow-Rotter</ref> and/or <ref
+                        target="http://www.bet-tfila.org/de/r-anthology.html">Dipl.-Ing. Mirko
+                        Przystawik</ref>. </p>
             </div>
         </body>
     </text>
