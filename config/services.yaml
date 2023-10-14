@@ -7,8 +7,8 @@ parameters:
     app.locales: [de, 'en']
     app.default_locale: 'de'
     default_locale: 'de' # without app. prefix for TeiEditionBundle
-    app.site.name: "Architecture and Space"
-    app.site.byline: "An Online Anthology"
+    app.site.name: "Jewish Textual Architectures"
+    app.site.byline: "Jewish Spaces, Places, and Architectures in Literature. An Online Anthology"
     app.site.publisher: "Institute for the History of the German Jews"
     app.site.email: 'info@juedische-geschichte-online.net'
     app.site.matomo.id: "%env(string:SITE_MATOMO_ID)%"

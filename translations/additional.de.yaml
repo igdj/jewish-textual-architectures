@@ -1,9 +1,8 @@
 # the following are from services.yaml
 # twig.globals.siteName
-Architecture and Space: Architektur und Raum
+Jewish Textual Architectures: Jüdische Text-Architekturen
 # twig.globals.siteTagline
-An Online Anthology: Online-Anthologie
-A Publication Project:  Ein Publikationsprojekt
+"Jewish Spaces, Places, and Architectures in Literature. An Online Anthology": Räume, Plätze und Architekturen des Jüdischen in der Literatur. Eine Online-Anthologie
 # eko_feed.feeds.article.title
 "Architecture and Space - Articles": Architektur und Raum - Beiträge
 # eko_feed.feeds.article.description
