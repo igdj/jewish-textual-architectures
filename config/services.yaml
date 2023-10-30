@@ -7,6 +7,9 @@ parameters:
     app.locales: [de, 'en']
     app.default_locale: 'de'
     default_locale: 'de' # without app. prefix for TeiEditionBundle
+    app.hosts.de: "%env(string:HOSTS_DE)%"
+    app.hosts.en: "%env(string:HOSTS_EN)%"
+
     app.site.name: "Jewish Textual Architectures"
     app.site.byline: "Jewish Spaces, Places, and Architectures in Literature. An Online Anthology"
     app.site.publisher: "Institute for the History of the German Jews"
