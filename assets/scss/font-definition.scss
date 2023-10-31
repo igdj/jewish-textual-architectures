@@ -1,14 +1,14 @@
 /*
  * Here you can import web-fonts and define the scss variables
  * used defining text fonts
+ *
+ * TODO: Switch to locally hosted fonts
  */
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i&subset=latin-ext');
 
-$font-stack-display-typeface: 'Source Sans Pro', Arial, "Arial Unicode MS", sans-serif;
-$font-stack-sans: 'Source Sans Pro', Arial, "Arial Unicode MS", sans-serif;
+$font-stack-display-typeface: 'Roboto Condensed', Arial, "Arial Unicode MS", sans-serif;
+$font-stack-sans: 'Roboto Condensed', Arial, "Arial Unicode MS", sans-serif;
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap');
-
-$font-stack-book-typeface: 'Noto Sans', Arial, "Arial Unicode MS", sans-serif;
-$font-stack-serif: 'Noto Sans', Arial, "Arial Unicode MS", sans-serif;
+$font-stack-book-typeface: 'Roboto Condensed', Arial, "Arial Unicode MS", sans-serif;
+$font-stack-serif: 'Roboto Condensed', Arial, "Arial Unicode MS", sans-serif;
