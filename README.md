@@ -1,9 +1,9 @@
-Front-end for juedische-geschichte-online.net/architektur-und-raum/
-===================================================================
+Front-end for Jewish Textual Architectures
+==========================================
 
 License
 -------
-    Code for the Front-end of juedische-geschichte-online.net/architektur-und-raum/
+    Code for the Front-end of jewish-textual-architectures.online
 
     (C) 2023 Institute for the History of the German Jews (IGdJ)
         Daniel Burckhardt
