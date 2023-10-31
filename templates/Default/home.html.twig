@@ -33,7 +33,7 @@
                 <div class="two-columns-disabled justify-hyphens">
                     {% if 'en' == app.request.locale %}
                         <p class="dta-p">
-                            The Institute for the History of the German Jews (IGdJ), PD Dr. Andreas Brämer, and the Bet Tfila - Research Unit for Jewish Architecture in Europe, PD Dr.-Ing. Ulrich Knufinke, are developing an online anthology on the topic of Jewish architecture and Jewish space. The online anthology is part of the tandem project “Constructions of Jewish Cultural Heritage in Theoretical-Critical and Literary Texts on Architecture and Space”, which both partners are working on in the context of the DFG Priority Program 2357 “Jewish Cultural Heritage”.
+                            The <a href="https://www.igdj-hh.de/en/" target="_blank">Institute for the History of the German Jews</a> (IGdJ), PD Dr. Andreas Brämer, and the <a href="http://www.bet-tfila.org/" target="_blank">Bet Tfila - Research Unit for Jewish Architecture in Europe</a>, PD Dr.-Ing. Ulrich Knufinke, are developing an online anthology on the topic of Jewish architecture and Jewish space. The online anthology is part of the tandem project <a href="https://gepris.dfg.de/gepris/projekt/497336599?language=en" target="_blank">“Constructions of Jewish Cultural Heritage in Theoretical-Critical and Literary Texts on Architecture and Space”</a>, which both partners are working on in the context of the <a href="https://spp-juedisches-kulturerbe.de/en/home/" target="_blank">DFG Priority Program 2357 “Jewish Cultural Heritage”</a>.
                         </p>
                         <p class="dta-p">
                             The focus is on selected textual sources (fictional/non-fictional) from the Haskalah to the immediate post-World War II period (1750-1965), which are used to cast thematic spotlights on the significance of Jewish architectures, spaces, and urban places for the construction and self-understanding of Jewish cultural heritage.
@@ -43,7 +43,7 @@
                         </p>
                     {% else %}
                         <p class="dta-p">
-                            Das Institut für die Geschichte der deutschen Juden (IGdJ), PD Dr. Andreas Brämer, und die Bet Tfila – Forschungsstelle für jüdische Architektur in Europa, PD Dr.-Ing. Ulrich Knufinke, erarbeiten eine Online-Anthologie zum Themenfeld der jüdischen Architektur und jüdischem Raum. Die Online-Anthologie ist Teil des Tandem-Projekts „Konstruktionen jüdischen Kulturerbes in theoretisch-kritischen und literarischen Texten zu Architektur und Raum“, das beide Partner im Kontext des DFG-Schwerpunktprogramms 2357 „Jüdisches Kulturerbe“ bearbeiten.                         </p>
+                            Das <a href="https://www.igdj-hh.de/" target="_blank">Institut für die Geschichte der deutschen Juden</a> (IGdJ), PD Dr. Andreas Brämer, und die <a href="http://www.bet-tfila.org/" target="_blank">Bet Tfila – Forschungsstelle für jüdische Architektur in Europa</a>, PD Dr.-Ing. Ulrich Knufinke, erarbeiten eine Online-Anthologie zum Themenfeld der jüdischen Architektur und jüdischem Raum. Die Online-Anthologie ist Teil des Tandem-Projekts <a href="https://gepris.dfg.de/gepris/projekt/497336599?language=de" target="_blank">„Konstruktionen jüdischen Kulturerbes in theoretisch-kritischen und literarischen Texten zu Architektur und Raum“</a>, das beide Partner im Kontext des <a href="https://spp-juedisches-kulturerbe.de/" target="_blank">DFG-Schwerpunktprogramms 2357 „Jüdisches Kulturerbe“</a> bearbeiten.                         </p>
                         <p>
                             Im Mittelpunkt stehen ausgewählte Textquellen (fiktional/nichtfiktional) von der Haskala bis in die unmittelbare Zeit nach dem Zweiten Weltkrieg (1750–1965), anhand derer thematische Schlaglichter auf die Bedeutung jüdischer Architekturen, Räume und städtebaulicher Plätze für die Konstruktion und das Selbstverständnis jüdischen Kulturerbes geworfen werden.                        </p>
                         <p>
@@ -107,8 +107,23 @@
         </div>
 
         <div class="col-sm-4 sidebar">
-            {#
             <div class="container-fluid box">
+                {% if 'en' == app.request.locale %}
+                <a href="https://gepris.dfg.de/gepris/projekt/497336599?language=en" target="_blank">
+                    <img class="d-block w-100" src="{{ app.request.basepath }}/img/dfg_logo_schriftzug_blau_foerderung.en.gif" alt="Funded by the Deutsche Forschungsgemeinschaft">
+                </a>
+                <a href="https://spp-juedisches-kulturerbe.de/en/home/" target="_blank">
+                    <img class="d-block w-100" src="{{ app.request.basepath }}/img/spp-2537.png" alt="DFG Priority Program 2357 “Jewish Cultural Heritage”" style="margin-top: 4rem">
+                </a>
+                {% else %}
+                <a href="https://gepris.dfg.de/gepris/projekt/497336599?language=de" target="_blank">
+                    <img class="d-block w-100" src="{{ app.request.basepath }}/img/dfg_logo_schriftzug_blau_foerderung.de.gif" alt="Gefördert durch Deutsche Forschungsgemeinschaft">
+                </a>
+                <a href="https://spp-juedisches-kulturerbe.de/" target="_blank">
+                    <img class="d-block w-100" src="{{ app.request.basepath }}/img/spp-2537.png" alt="DFG-Schwerpunktprogramm 2357 „Jüdisches Kulturerbe“" style="margin-top: 4rem">
+                </a>
+                {% endif %}
+                {#
                 <div class="row box-color-title">
                     <div class="col-sm-12">
                         <h4>Nachdenken über Diaspora</h4>
@@ -126,8 +141,8 @@
                     </div>
                 </div>
                 -->
+                #}
             </div>
-            #}
         </div>
     </div>
 {% endblock %}
