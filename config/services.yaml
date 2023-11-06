@@ -11,7 +11,7 @@ parameters:
     app.hosts.en: "%env(string:HOSTS_EN)%"
 
     app.site.name: "Jewish Textual Architectures"
-    app.site.byline: "Jewish Spaces, Places, and Architectures in Literature. An Online Anthology"
+    app.site.byline: "Jewish Spaces, Places, and Architectures in Literature. Online Anthology"
     app.site.publisher: "Institute for the History of the German Jews"
     app.site.email: 'info@juedische-geschichte-online.net'
     app.site.matomo.id: "%env(string:SITE_MATOMO_ID)%"

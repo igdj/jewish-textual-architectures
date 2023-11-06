@@ -23,8 +23,9 @@
                     </div>
                     <div class="col-md-12" id="site-name">
                         <h1>
-                            <a href="{{ path('home') }}">{{ siteName|trans({}, 'additional') }}</a><br />
-                            <a href="{{ path('home') }}" id="site-tagline">{{ siteTagline|trans({}, 'additional') }}</a>
+                            <a href="{{ path('home') }}">
+                                <img src="{{ app.request.basepath }}/img/logo.{{ app.request.locale }}.svg" alt="{{ siteName|trans({}, 'additional') }}. {{ siteTagline|trans({}, 'additional') }}" />
+                            </a>
                         </h1>
                     </div>
                     <div class="col-md-9">

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="380" height="140" viewBox="40 40 353 140">
+  <defs>
+    <style>
+      .cls-1 {
+      }
+
+      .cls-2, .cls-3, .cls-5 {
+        fill: #276cea;
+      }
+
+      .cls-3 {
+        font-size: 18px;
+        font-family: Roboto-Regular, Roboto;
+      }
+
+      .cls-4 {
+        fill: #212529;
+      }
+
+      .cls-5 {
+        font-size: 27px;
+        font-family: RobotoCondensed-Bold, Roboto Condensed;
+        font-weight: 700;
+        letter-spacing: -0.005em;
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Logo_Jüdische_Text-Architektur_EN">
+      <rect width="353" height="191"/>
+    </clipPath>
+  </defs>
+  <g id="Logo_Jüdische_Text-Architektur_EN" data-name="Logo_Jüdische Text-Architektur_EN" class="cls-1">
+    <rect class="cls-6" width="353" height="191"/>
+    <rect id="Rechteck_2898" data-name="Rechteck 2898" class="cls-2" width="52.185" height="4" transform="translate(32 42)"/>
+    <text id="Jewish_Spaces_Places_and_Architectures_in_Literature_Online_Anthology" data-name="Jewish Spaces, Places, and Architectures in Literature
+Online Anthology" class="cls-3" transform="translate(30 93)"><tspan x="0" y="19">Jewish Spaces, Places, and </tspan><tspan x="0" y="39">Architectures in Literature</tspan><tspan class="cls-4"><tspan x="0" y="69">Online Anthology</tspan></tspan></text>
+    <text id="Jewish_Textual_Architectures" data-name="Jewish Textual Architectures" class="cls-5" transform="translate(30 52)"><tspan x="0" y="25">Jewish Textual Architectures</tspan></text>
+  </g>
+</svg>
