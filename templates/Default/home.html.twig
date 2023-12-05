@@ -109,32 +109,47 @@
         <div class="col-sm-4 sidebar">
             <div class="container-fluid box">
                 {% if 'en' == app.request.locale %}
+                <div class="row box-color-title">
+                    <div class="col-sm-12">
+                        <h4>Call for Papers</h4>
+                    </div>
+                </div>
+                <div class="row box-color-content">
+                    <div class="col-sm-12">
+                        <a href="https://igdj-hh.de/fileadmin/user_upload/CfP_Workshop_Hamburg_Juni_2024_Text_Englisch.pdf" target="_blank"><b>Constructions of Jewish Cultural Heritage in Fictional Texts on Architecture, City, and Space</b></a><br />
+Workshop at the Warburg-Haus, Heilwigstr. 116, 20249 Hamburg<br />
+Workshop period: June 26–27, 2024<br />
+Deadline: January 31, 2024
+                    </div>
+                </div>
                 <a href="https://gepris.dfg.de/gepris/projekt/497336599?language=en" target="_blank">
-                    <img class="d-block w-100" src="{{ app.request.basepath }}/img/dfg_logo_schriftzug_blau_foerderung.en.gif" alt="Funded by the Deutsche Forschungsgemeinschaft">
+                    <img class="d-block w-100 mt-4" src="{{ app.request.basepath }}/img/dfg_logo_schriftzug_blau_foerderung.en.gif" alt="Funded by the Deutsche Forschungsgemeinschaft">
                 </a>
                 <a href="https://spp-juedisches-kulturerbe.de/en/home/" target="_blank">
                     <img class="d-block w-100" src="{{ app.request.basepath }}/img/spp-2537.png" alt="DFG Priority Program 2357 “Jewish Cultural Heritage”" style="margin-top: 4rem">
                 </a>
                 {% else %}
+                <div class="row box-color-title">
+                    <div class="col-sm-12">
+                        <h4>Call for Papers</h4>
+                    </div>
+                </div>
+                <div class="row box-color-content">
+                    <div class="col-sm-12">
+                        <a href="https://igdj-hh.de/fileadmin/user_upload/CfP_Workshop_Hamburg_Juni_2024_Text_Deutsch.pdf" target="_blank"><b>Konstruktionen jüdischen Kulturerbes in literarischen Texten zu Architektur, Stadt und Raum</b></a><br />
+Workshop im Warburg-Haus, Heilwigstr. 116, 20249 Hamburg<br />
+Tagungszeitraum: 26.–27. Juni 2024<br />
+Deadline: 31. Januar 2024
+                    </div>
+                </div>
                 <a href="https://gepris.dfg.de/gepris/projekt/497336599?language=de" target="_blank">
-                    <img class="d-block w-100" src="{{ app.request.basepath }}/img/dfg_logo_schriftzug_blau_foerderung.de.gif" alt="Gefördert durch Deutsche Forschungsgemeinschaft">
+                    <img class="d-block w-100 mt-4" src="{{ app.request.basepath }}/img/dfg_logo_schriftzug_blau_foerderung.de.gif" alt="Gefördert durch Deutsche Forschungsgemeinschaft">
                 </a>
                 <a href="https://spp-juedisches-kulturerbe.de/" target="_blank">
                     <img class="d-block w-100" src="{{ app.request.basepath }}/img/spp-2537.png" alt="DFG-Schwerpunktprogramm 2357 „Jüdisches Kulturerbe“" style="margin-top: 4rem">
                 </a>
                 {% endif %}
                 {#
-                <div class="row box-color-title">
-                    <div class="col-sm-12">
-                        <h4>Nachdenken über Diaspora</h4>
-                    </div>
-                </div>
-                <div class="row box-color-content">
-                    <div class="col-sm-12">
-                        <a href="https://vimeo.com/712768316" target="_blank"><b>Michael Brenner im Gespräch mit Miriam Rürup</b></a><br />
-                        Ein Video der Ad hoc-AG „Zukunftswerte“ der Bayerischen Akademie der Wissenschaften
-                    </div>
-                </div>
                 <!--
                 <div class="row box-color-content border-top">
                     <div class="col-sm-12">
