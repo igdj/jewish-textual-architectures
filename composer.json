@@ -11,7 +11,7 @@
         },
         "optimize-autoloader": true,
         "platform": {
-            "php": "7.3.0"
+            "php": "7.4.0"
         },
         "preferred-install": {
             "*": "dist"
@@ -53,10 +53,6 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/burki/OaiPmh"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/jtl-software/connector-iso-639"
         },
         {
@@ -73,7 +69,7 @@
         }
     ],
     "require": {
-        "php": "^7.3|^8.1",
+        "php": "^7.4|^8.1",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-intl": "*",
@@ -86,7 +82,6 @@
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
         "liip/url-auto-converter-bundle": "dev-master",
         "presta/sitemap-bundle": "^3.3",
-        "saidatom/oai-pmh": "dev-master#ba88a1f62e5a333a8936a7991b2bb1738cf59d9c as 0.1",
         "sensio/framework-extra-bundle": "^6.2",
         "symfony/apache-pack": "^1.0",
         "symfony/console": "5.4.*",
