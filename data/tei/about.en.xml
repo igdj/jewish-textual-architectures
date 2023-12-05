@@ -6,7 +6,8 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">About the Project</title>
+                <title type="main">Jewish Textual Architectures | Jewish Spaces, Places, and
+                    Architectures in Literature </title>
             </titleStmt>
             <publicationStmt>
                 <publisher>
