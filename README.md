@@ -37,11 +37,23 @@ Installation
 ------------
 ### Requirements
 
-- PHP >= 7.3 (check with `php -v`)
+- PHP >= 8.1 (check with `php -v`)
 - composer (check with `composer -v`; if it is missing, see https://getcomposer.org/)
 - `convert` (for image tiles, check with `which convert`; if it is missing, install e.g. with `sudo apt-get install imagemagick`)
 - Java 1.8 (for XSLT and Solr, check with `java -version`; if it is missing, install e.g. with `sudo apt-get install openjdk-8-jdk`)
 - bin/saxon9he.jar (Download from https://sourceforge.net/projects/saxon/files/Saxon-HE/9.9/SaxonHE9-9-1-8J.zip/download)
+
+In a fitting directory (e.g. `/var/www`), clone the project
+
+    git clone https://github.com/burki/architektur-und-raum.git
+
+If you don't have `git` installed, you can also download the project as ZIP-file
+and extract it manually.
+
+Change into the newly created project-directory
+
+    cd architektur-und-raum
+    composer install
 
 ### Adjust Local Settings
 
@@ -92,7 +104,7 @@ We can now generate the tiles
 
     ./bin/console source:tiles data/tei/source-00001.de.xml
 
-(`convert` from the ImageMagick packaged is called to generate the tiles in `public/viewer/source-00001/`)
+(`convert` from the ImageMagick package is called to generate the tiles in `public/viewer/source-00001/`)
 
 And generate the METS-container needed for `iview`
 
