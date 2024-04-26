@@ -72,7 +72,7 @@
         "armin/scssphp-bundle": "^1.2",
         "cocur/slugify": "^4.4",
         "doctrine/annotations": "^1.4|^2.0",
-        "eko/feedbundle": "dev-master",
+        "eko/feedbundle": "^2.2",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
         "igdj/tei-edition-bundle": "dev-symfony-6",
