@@ -11,6 +11,7 @@ doctrine:
         auto_mapping: true
         mappings:
             App:
+                type: annotation # TODO: switch to attribute
                 is_bundle: false
                 dir: '%kernel.project_dir%/src/Entity'
                 prefix: 'App\Entity'
@@ -19,6 +20,10 @@ doctrine:
             string_functions:
                 REPLACE: DoctrineExtensions\Query\Mysql\Replace
                 CAST:       Oro\ORM\Query\AST\Functions\Cast
+                # https://packagist.org/packages/scienta/doctrine-json-functions
+                JSON_EXTRACT: Scienta\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonExtract
+                JSON_CONTAINS: Scienta\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonContains
+                JSON_UNQUOTE: Scienta\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonUnquote
             datetime_functions:
                 YEAR:       DoctrineExtensions\Query\Mysql\Year
 
