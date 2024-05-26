@@ -2704,12 +2704,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "c2ec59e3703b45f044688a56e385e4c67949a2ab"
+                "reference": "0076cb0e7de2fa1109b2c9ea23efb26fef563fbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/c2ec59e3703b45f044688a56e385e4c67949a2ab",
-                "reference": "c2ec59e3703b45f044688a56e385e4c67949a2ab",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/0076cb0e7de2fa1109b2c9ea23efb26fef563fbf",
+                "reference": "0076cb0e7de2fa1109b2c9ea23efb26fef563fbf",
                 "shasum": ""
             },
             "require": {
@@ -2787,7 +2787,7 @@
             "support": {
                 "source": "https://github.com/burki/tei-edition-bundle/tree/symfony-6"
             },
-            "time": "2024-05-26T10:12:03+00:00"
+            "time": "2024-05-26T14:35:19+00:00"
         },
         {
             "name": "jms/translation-bundle",

@@ -11,6 +11,7 @@ parameters:
     app.hosts.de: "%env(string:HOSTS_DE)%"
     app.hosts.en: "%env(string:HOSTS_EN)%"
 
+    app.site.key: 'jta'
     app.site.name: "Jewish Textual Architectures"
     app.site.byline: "Jewish Spaces, Places, and Architectures in Literature. Online Anthology"
     app.site.publisher: "Institute for the History of the German Jews"
