@@ -328,7 +328,9 @@ body[class*="route-about"], body.route-terms {
     }
 }
 
-/* for the moment, hide search */
 #header-search-wrapper {
-    display: none !important;
+    margin-top: 2rem; /* for the moment, move below language selector */
+    .form-control-feedback {
+        margin-left: -2rem;
+    }
 }

@@ -21,15 +21,16 @@
                             {% block header_institution %}{% endblock %}
                         </div>
                     </div>
-                    <div class="col-md-12" id="site-name">
+                    <div class="col-md-4" id="site-name">
                         <h1>
                             <a href="{{ path('home') }}">
-                                <img src="{{ app.request.basepath }}/img/logo.{{ app.request.locale }}.svg" style="width: 360px; max-width: 60%; height: auto" alt="{{ siteName|trans({}, 'additional') }}. {{ siteTagline|trans({}, 'additional') }}" />
+                                <img src="{{ app.request.basepath }}/img/logo.{{ app.request.locale }}.svg" style="width: 360px; max-width: 90%; height: auto" alt="{{ siteName|trans({}, 'additional') }}. {{ siteTagline|trans({}, 'additional') }}" />
                             </a>
                         </h1>
                     </div>
-                    <div class="col-md-9">
-                        {#{ knp_menu_render('main') }#}
+                    {% if not isFeatureEnabled('limited_navigation') %}
+                    <div class="col-md-5" style="margin-top: 2rem">
+                        {{ knp_menu_render('main') }}
                     </div>
                     <div id="header-search-wrapper" class="col-md-3 hidden-xsd-none d-sm-block">
                         <form action="{{ path('search-index') }}" method="post">
@@ -39,6 +40,7 @@
                             </div>
                         </form>
                     </div>
+                    {% endif %}
                 </div>
             </div>
         </header>
