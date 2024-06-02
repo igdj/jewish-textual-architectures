@@ -5,7 +5,7 @@ License
 -------
     Code for the Front-end of jewish-textual-architectures.online
 
-    (C) 2023 Institute for the History of the German Jews (IGdJ)
+    (C) 2024 Institute for the History of the German Jews (IGdJ)
         Daniel Burckhardt
 
 
@@ -40,7 +40,7 @@ Installation
 - PHP >= 8.1 (check with `php -v`)
 - composer (check with `composer -v`; if it is missing, see https://getcomposer.org/)
 - `convert` (for image tiles, check with `which convert`; if it is missing, install e.g. with `sudo apt-get install imagemagick`)
-- Java 1.8 (for XSLT and Solr, check with `java -version`; if it is missing, install e.g. with `sudo apt-get install openjdk-8-jdk`)
+- Java 1.11 (for XSLT and Solr, check with `java -version`; if it is missing, install e.g. with `sudo apt-get install openjdk-11-jdk`)
 - bin/saxon9he.jar (Download from https://sourceforge.net/projects/saxon/files/Saxon-HE/9.9/SaxonHE9-9-1-8J.zip/download)
 
 In a fitting directory (e.g. `/var/www`), clone the project
@@ -136,4 +136,4 @@ Tweaking the site
 -----------------
 ### Translate messages and routes
 
-    ./bin/console translation:extract de --dir=./src/ --dir=./templates/ --output-dir=./translations --enable-extractor=jms_i18n_routing
+    ./bin/console jms:translation:extract de --dir=./src/ --dir=./templates/ --output-dir=./translations --enable-extractor=jms_i18n_routing

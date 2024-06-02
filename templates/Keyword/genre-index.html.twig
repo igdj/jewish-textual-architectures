@@ -1,0 +1,19 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% import '@TeiEdition/Shared/helper.html.twig' as helper %}
+
+{% block body %}
+    <div class="row">
+    {% for keyword,articles in articlesByKeyword %}
+        {% set keyword_localized =  keyword|trans({}, 'additional') %}
+        <div class="col-12 topic">
+            <h4 id="{{ keyword_localized|slugify }}">
+                <div class="topic-label">{{ keyword_localized }}</div>
+            </h4>
+            {% for article in articles %}
+                {{ helper.article_linked_full(article) }}
+            {% endfor %}
+        </div>
+    {% endfor %}
+    </div><!-- .row -->
+{% endblock %}

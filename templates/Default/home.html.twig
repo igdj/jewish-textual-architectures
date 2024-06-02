@@ -53,6 +53,44 @@
                 </div>
             </div>
 
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4><a href="{{ path('genre-index') }}">{{ 'Genres'|trans }}</a></h4>
+                    </div>
+                </div>
+                <div class="row">
+                    {% for genre in genres %}
+                        {% set genre_localized = genre|trans({}, 'additional') %}
+                    <div class="col-sm-4">
+                        <a href="{{ path('genre-index') }}#{{ genre_localized|slugify }}">
+                            <img src="{{ app.request.basepath }}/img/tile/{{ genre|slugify }}.{{ app.request.locale }}.svg" style="width: 100%; height: auto" alt="" />
+                            {{ genre_localized }}
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-4">
+                        <h4><a href="{{ path('topic-index') }}">{{ 'Topics'|trans }}</a></h4>
+                        <a href="{{ path('topic-index') }}">
+                            <img src="{{ app.request.basepath }}/img/tile/topic.svg" style="width: 100%; height: auto" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4><a href="{{ path('place-map') }}">{{ 'Map'|trans }}</a></h4>
+                        <a href="{{ path('place-map') }}">
+                            <img src="{{ app.request.basepath }}/img/tile/map.svg" style="width: 100%; height: auto" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4><a href="{{ path('date-chronology') }}">{{ 'Chronology'|trans }}</a></h4>
+                        <a href="{{ path('date-chronology') }}">
+                            <img src="{{ app.request.basepath }}/img/tile/chronology.svg" style="width: 100%; height: auto" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
             {#
             <div class="container-fluid box">
                 <div class="row box-header map">

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="353" height="191" viewBox="0 0 353 191">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Pfad_919" data-name="Pfad 919" d="M0-32.762H353v-192H0Z" transform="translate(0 224.762)" fill="rgba(0,0,0,0)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rechteck_2855" data-name="Rechteck 2855" width="149.766" height="32.203" fill="rgba(0,0,0,0)"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rechteck_2856" data-name="Rechteck 2856" width="495.836" height="123.183" fill="rgba(0,0,0,0)"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="Rechteck_2857" data-name="Rechteck 2857" width="290.624" height="59.384" fill="rgba(0,0,0,0)"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <rect id="Rechteck_2858" data-name="Rechteck 2858" width="304.578" height="39.525" fill="rgba(0,0,0,0)"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <rect id="Rechteck_2859" data-name="Rechteck 2859" width="479.146" height="45.306" fill="rgba(0,0,0,0)"/>
+    </clipPath>
+    <clipPath id="clip-path-7">
+      <rect id="Rechteck_2860" data-name="Rechteck 2860" width="289.697" height="44.642" fill="rgba(0,0,0,0)"/>
+    </clipPath>
+    <clipPath id="clip-Button_Fiktionale_Texte">
+      <rect width="353" height="191"/>
+    </clipPath>
+  </defs>
+  <g id="Button_Fiktionale_Texte" data-name="Button_Fiktionale Texte" clip-path="url(#clip-Button_Fiktionale_Texte)">
+    <rect width="353" height="191" fill="#fff"/>
+    <rect id="Rechteck_2771" data-name="Rechteck 2771" width="353" height="192" fill="#fff"/>
+    <g id="Gruppe_2511" data-name="Gruppe 2511" transform="translate(-0.001 224.762)">
+      <path id="Pfad_918" data-name="Pfad 918" d="M0-32.762H353v-192H0Z" transform="translate(0 0)" fill="#e8e8e8"/>
+      <g id="Gruppe_2510" data-name="Gruppe 2510" transform="translate(0 -224.762)" clip-path="url(#clip-path)">
+        <g id="Gruppe_2494" data-name="Gruppe 2494" transform="translate(-3.394 128.127)" opacity="0.5">
+          <g id="Gruppe_2493" data-name="Gruppe 2493">
+            <g id="Gruppe_2492" data-name="Gruppe 2492" clip-path="url(#clip-path-2)">
+              <g id="Gruppe" transform="translate(9.533 6.19)">
+                <text id="lyrische_T" data-name="lyrische T" transform="translate(0 17)" fill="#747474" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">lyrische T</tspan></text>
+                <text id="exte" transform="translate(77.841 17)" fill="#747474" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">exte</tspan></text>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="Gruppe_2497" data-name="Gruppe 2497" transform="translate(-59.304 -10.823)" opacity="0.5">
+          <g id="Gruppe_2496" data-name="Gruppe 2496">
+            <g id="Gruppe_2495" data-name="Gruppe 2495" clip-path="url(#clip-path-3)">
+              <text id="Romane" transform="translate(66.502 96.164)" fill="#747474" font-size="86" font-family="Roboto-Light, Roboto" font-weight="300"><tspan x="0" y="0">Romane</tspan></text>
+            </g>
+          </g>
+        </g>
+        <g id="Gruppe_2500" data-name="Gruppe 2500" transform="translate(100.886 105.303)" opacity="0.5">
+          <g id="Gruppe_2499" data-name="Gruppe 2499">
+            <g id="Gruppe_2498" data-name="Gruppe 2498" clip-path="url(#clip-path-4)">
+              <text id="Erzählungen" transform="translate(19.921 45.874)" fill="#747474" font-size="38" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Erzählungen</tspan></text>
+            </g>
+          </g>
+        </g>
+        <g id="Gruppe_2503" data-name="Gruppe 2503" transform="translate(41.865 154.706)" opacity="0.5">
+          <g id="Gruppe_2502" data-name="Gruppe 2502">
+            <g id="Gruppe_2501" data-name="Gruppe 2501" clip-path="url(#clip-path-5)">
+              <g id="Gruppe-2" data-name="Gruppe" transform="translate(19.3 6.326)">
+                <text id="literarische_Repor" data-name="literarische Repor" transform="translate(0 24)" fill="#747474" font-size="23" font-family="Roboto-Light, Roboto" font-weight="300"><tspan x="0" y="0">literarische Repor</tspan></text>
+                <text id="tagen" transform="translate(191.63 24)" fill="#747474" font-size="23" font-family="Roboto-Light, Roboto" font-weight="300"><tspan x="0" y="0">tagen</tspan></text>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="Gruppe_2506" data-name="Gruppe 2506" transform="translate(-16.423 77.764)" opacity="0.5">
+          <g id="Gruppe_2505" data-name="Gruppe 2505">
+            <g id="Gruppe_2504" data-name="Gruppe 2504" clip-path="url(#clip-path-6)">
+              <g id="Gruppe-3" data-name="Gruppe" transform="translate(22.562 5.794)">
+                <text id="literarische_Stadtbeschr" data-name="literarische Stadtbeschr" transform="translate(0 28)" fill="#747474" font-size="27" font-family="Roboto-Light, Roboto" font-weight="300"><tspan x="0" y="0">literarische Stadtbeschr</tspan></text>
+                <text id="eibungen" transform="translate(304.405 28)" fill="#747474" font-size="27" font-family="Roboto-Light, Roboto" font-weight="300"><tspan x="0" y="0">eibungen</tspan></text>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="Gruppe_2509" data-name="Gruppe 2509" transform="translate(58.366 -5.981)" opacity="0.5">
+          <g id="Gruppe_2508" data-name="Gruppe 2508">
+            <g id="Gruppe_2507" data-name="Gruppe 2507" clip-path="url(#clip-path-7)">
+              <g id="Gruppe-4" data-name="Gruppe" transform="translate(22.187 5.266)">
+                <text id="dramatische_T" data-name="dramatische T" transform="translate(0 29)" fill="#747474" font-size="28" font-family="Roboto-Light, Roboto" font-weight="300"><tspan x="0" y="0">dramatische T</tspan></text>
+                <text id="exte-2" data-name="exte" transform="translate(180.715 28)" fill="#747474" font-size="27" font-family="Roboto-Light, Roboto" font-weight="300"><tspan x="0" y="0">exte</tspan></text>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path id="Pfad_927" data-name="Pfad 927" d="M0,0H353.562V192H0Z" transform="translate(-0.563 -0.5)" fill="#c3c0a0" opacity="0.323" style="mix-blend-mode: multiply;isolation: isolate"/>
+  </g>
+</svg>

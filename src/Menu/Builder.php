@@ -84,24 +84,40 @@ class Builder
 
         $menu = $this->factory->createItem('home', [ 'label' => $this->translator->trans('Home'), 'route' => 'home' ]);
         if (array_key_exists('position', $options) && 'footer' == $options['position']) {
-            $menu->setChildrenAttributes([ 'id' => 'menu-main-footer', 'class' => 'small' ]);
+            $menu->setChildrenAttributes([
+                'id' => 'menu-main-footer',
+                'class' => 'small',
+            ]);
         }
         else {
-            $menu->setChildrenAttributes([ 'id' => 'menu-main', 'class' => 'list-inline' ]);
+            $menu->setChildrenAttributes([
+                'id' => 'menu-main',
+                'class' => 'list-inline',
+            ]);
         }
 
         // add menu item
-        // $menu->addChild('topic-index', [ 'label' => $this->translator->trans('Topics'), 'route' => 'topic-index' ]);
+        $menu->addChild('genre-index', [
+                'label' => $this->translator->trans('Genres'),
+                'route' => 'genre-index',
+            ])
+            ->setAttribute('class', 'list-inline-item');
 
-        $menu->addChild('date-chronology', [
-                'label' => $this->translator->trans('Chronology'),
-                'route' => 'date-chronology',
+        $menu->addChild('topic-index', [
+                'label' => $this->translator->trans('Topics'),
+                'route' => 'topic-index',
             ])
             ->setAttribute('class', 'list-inline-item');
 
         $menu->addChild('place-map', [
                 'label' => $this->translator->trans('Map'),
                 'route' => 'place-map',
+            ])
+            ->setAttribute('class', 'list-inline-item');
+
+        $menu->addChild('date-chronology', [
+                'label' => $this->translator->trans('Chronology'),
+                'route' => 'date-chronology',
             ])
             ->setAttribute('class', 'list-inline-item');
 
@@ -133,17 +149,18 @@ class Builder
                 'route' => 'event-index',
             ]);
         /*
-        // the following are currently not in use
         $menu['_lookup']
             ->addChild('bibliography-index', [
                 'label' => $this->translator->trans('Bibliography'),
                 'route' => 'bibliography-index',
             ]);
+        */
         $menu['_lookup']
             ->addChild('article-index', [
                 'label' => $this->translator->trans('Articles'),
                 'route' => 'article-index',
             ]);
+        /*
         $menu['_lookup']
             ->addChild('glossary-index', [
                 'label' => $this->translator->trans('Glossary'),
