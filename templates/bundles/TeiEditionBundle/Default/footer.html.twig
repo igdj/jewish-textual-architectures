@@ -1,9 +1,24 @@
         <footer>
+            <div id="footer-funder" class="jumbotron jumbotron-fluid">
+                <div class="container d-flex align-items-end justify-content-end">
+                    <div>
+                        <a href="https://spp-juedisches-kulturerbe.de/{% if 'en' == app.request.locale %}en/home/{% endif %}" target="_blank">
+                            <img style="height: 100px; width: auto" src="{{ app.request.basepath }}/img/spp-2537.png" alt="{{ 'DFG Priority Program 2357 “Jewish Cultural Heritage”'|trans }}">
+                        </a>
+                    </div>
+                    <div class="ml-5">
+                        <a href="https://gepris.dfg.de/gepris/projekt/497336599?language={{ app.request.locale }}" target="_blank">
+                            <img style="height: 70px; width: auto" src="{{ app.request.basepath }}/img/dfg_logo_schriftzug_blau_foerderung.{{ app.request.locale }}.gif" alt="{{ 'Funded by the Deutsche Forschungsgemeinschaft'|trans }}">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             {% if twitterSite is defined and twitterSite is not empty %}
             <div id="footer-social" class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12" style="z-index: 1; text-align: center">
-                    <a class="twitter" target="_blank" href="https://twitter.com/{{ twitterSite }}" title="@{{ twitterSite }}" rel="noopener"> </a>
+                        <a class="twitter" target="_blank" href="https://twitter.com/{{ twitterSite }}" title="@{{ twitterSite }}" rel="noopener"> </a>
                     </div>
                 </div>
             </div>

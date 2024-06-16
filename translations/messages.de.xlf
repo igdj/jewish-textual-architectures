@@ -63,7 +63,7 @@
       </trans-unit>
       <trans-unit id="817b79b0af2db11da9523bd5738397ebf823132b" resname="Creator">
         <source>Creator</source>
-        <target state="new">>Urheber_in</target>
+        <target state="new">Urheber_in</target>
         <jms:reference-file line="315">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="d4988960e82b0125a730ab76a5721405f3831b86" resname="DFG-Viewer">
@@ -301,7 +301,7 @@
       </trans-unit>
       <trans-unit id="f7d8c9b283c81dd633f1aee6af966b8793e99883" resname="Source Type">
         <source>Source Type</source>
-        <target state="new">Source Type</target>
+        <target state="new">Quellenart</target>
         <jms:reference-file line="311">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="4d1feed383c46aa0ab5f0a419c1a46d2f88fc26d" resname="Sources by primary Place">

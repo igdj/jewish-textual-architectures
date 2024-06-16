@@ -43,6 +43,15 @@
 
         {% block contenttop %}
             {% embed '@TeiEdition/Default/contenttop_skeleton.html.twig' %}{% endembed %}
+            {% block carousel %}
+                    <div id="carouselExampleSlidesOnly" class="carousel slide w-100" data-ride="carousel" style="margin-top: -24px; margin-bottom: 24px">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="position: relative; height: 80px; overflow-y: hidden;">
+                                <img class="d-block w-100" src="{{ app.request.basepath }}/img/carousel/home.jpg" alt="" style="position: absolute; bottom: 0">
+                            </div>
+                        </div><!-- .carousel-inner -->
+                    </div><!-- .carousel -->
+            {% endblock %}
         {% endblock %}
 
         {% block contentcontainer %}

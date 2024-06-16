@@ -25,6 +25,8 @@
     {% endembed %}
 {% endblock %}
 
+{% block contentcontainer %}
+<div class="container wrapper flex-grow-1 overflow-auto">
 {% block body %}
     <div class="row">
         <div id="col-main" class="col-sm-8">
@@ -52,99 +54,19 @@
                     {% endif %}
                 </div>
             </div>
-
-            <div class="container-fluid p-0">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h4><a href="{{ path('genre-index') }}">{{ 'Genres'|trans }}</a></h4>
-                    </div>
-                </div>
-                <div class="row">
-                    {% for genre in genres %}
-                        {% set genre_localized = genre|trans({}, 'additional') %}
-                    <div class="col-sm-4">
-                        <a href="{{ path('genre-index') }}#{{ genre_localized|slugify }}">
-                            <img src="{{ app.request.basepath }}/img/tile/{{ genre|slugify }}.{{ app.request.locale }}.svg" style="width: 100%; height: auto" alt="" />
-                            {{ genre_localized }}
-                        </a>
-                    </div>
-                    {% endfor %}
-                </div>
-                <div class="row mt-3">
-                    <div class="col-sm-4">
-                        <h4><a href="{{ path('topic-index') }}">{{ 'Topics'|trans }}</a></h4>
-                        <a href="{{ path('topic-index') }}">
-                            <img src="{{ app.request.basepath }}/img/tile/topic.svg" style="width: 100%; height: auto" alt="" />
-                        </a>
-                    </div>
-                    <div class="col-sm-4">
-                        <h4><a href="{{ path('place-map') }}">{{ 'Map'|trans }}</a></h4>
-                        <a href="{{ path('place-map') }}">
-                            <img src="{{ app.request.basepath }}/img/tile/map.svg" style="width: 100%; height: auto" alt="" />
-                        </a>
-                    </div>
-                    <div class="col-sm-4">
-                        <h4><a href="{{ path('date-chronology') }}">{{ 'Chronology'|trans }}</a></h4>
-                        <a href="{{ path('date-chronology') }}">
-                            <img src="{{ app.request.basepath }}/img/tile/chronology.svg" style="width: 100%; height: auto" alt="" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-            {#
-            <div class="container-fluid box">
-                <div class="row box-header map">
-                    <div class="col-sm-12">
-                        <h4><a href="{{ path('place-map') }}">{{ 'Map'|trans }}</a></h4>
-                    </div>
-                </div>
-                <div class="row box-content">
-                    <div class="col-sm-12">
-                        <div id="map-container">
-                            <div id="map" style="width: 100%; min-height: 320px"></div>
-                            <script>
-                            $( document).ready(function () {
-                                showMap();
-                            });
-
-                            {{ map.showMap(bounds, markers) }}
-                            </script>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-fluid box" style="margin-top: 2em">
-                <div class="row box-header chronology">
-                    <div class="col-sm-12">
-                        <h4><a href="{{ path('date-chronology') }}">{{ 'Chronology'|trans }}</a></h4>
-                    </div>
-                </div>
-                <div class="row box-content">
-                    <div id="chronology" data-url="{{ path('date-chronology-partial') }}" style="max-height: 320px; overflow-y: scroll; overflow-x: hidden">
-                        {{ 'Loading...' | trans }}
-                        <script>
-                            var chronologyLoaded = false;
-
-                            $( document).ready(function () {
-                                if (!chronologyLoaded) {
-                                    var pane = $( '#chronology' );
-                                    var url = pane.attr("data-url");
-
-                                    // ajax load from data-url
-                                    $( pane ).load(url,function(result){
-                                        chronologyLoaded = true;
-                                    });
-                                }
-                            });
-                        </script>
-                    </div>
-                </div>
-            </div>
-            #}
         </div>
 
         <div class="col-sm-4 sidebar">
+            {% if genres is not empty %}
+            <div class="mb-4">
+                {% for genre in genres %}
+                    {% set genre_localized = genre|trans({}, 'additional') %}
+                <a href="{{ path('genre-index') }}#{{ genre_localized|slugify }}" class="genre-underlined genre-{{ genre|slugify }}">
+                    {{ genre_localized }}
+                </a>
+                {% endfor %}
+            </div>
+            {% endif %}
             <div class="container-fluid box">
                 {% if 'en' == app.request.locale %}
                 <div class="row box-color-title">
@@ -160,12 +82,6 @@ Workshop period: June 26–27, 2024<br />
 Deadline: January 31, 2024
                     </div>
                 </div>
-                <a href="https://gepris.dfg.de/gepris/projekt/497336599?language=en" target="_blank">
-                    <img class="d-block w-100 mt-4" src="{{ app.request.basepath }}/img/dfg_logo_schriftzug_blau_foerderung.en.gif" alt="Funded by the Deutsche Forschungsgemeinschaft">
-                </a>
-                <a href="https://spp-juedisches-kulturerbe.de/en/home/" target="_blank">
-                    <img class="d-block w-100" src="{{ app.request.basepath }}/img/spp-2537.png" alt="DFG Priority Program 2357 “Jewish Cultural Heritage”" style="margin-top: 4rem">
-                </a>
                 {% else %}
                 <div class="row box-color-title">
                     <div class="col-sm-12">
@@ -180,12 +96,6 @@ Tagungszeitraum: 26.–27. Juni 2024<br />
 Deadline: 31. Januar 2024
                     </div>
                 </div>
-                <a href="https://gepris.dfg.de/gepris/projekt/497336599?language=de" target="_blank">
-                    <img class="d-block w-100 mt-4" src="{{ app.request.basepath }}/img/dfg_logo_schriftzug_blau_foerderung.de.gif" alt="Gefördert durch Deutsche Forschungsgemeinschaft">
-                </a>
-                <a href="https://spp-juedisches-kulturerbe.de/" target="_blank">
-                    <img class="d-block w-100" src="{{ app.request.basepath }}/img/spp-2537.png" alt="DFG-Schwerpunktprogramm 2357 „Jüdisches Kulturerbe“" style="margin-top: 4rem">
-                </a>
                 {% endif %}
                 {#
                 <!--
@@ -197,5 +107,99 @@ Deadline: 31. Januar 2024
                 #}
             </div>
         </div>
+    </div><!-- .row -->
+    {% endblock body %}
+</div><!-- .container -->
+
+<div id="home-jumbotron" class="jumbotron jumbotron-fluid pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h4><a href="{{ path('genre-index') }}">{{ 'Genre'|trans }}</a></h4>
+            </div>
+        </div>
+        <div class="row">
+            {% for genre in genres %}
+                {% set genre_localized = genre|trans({}, 'additional') %}
+            <div class="col-sm-4">
+                <a href="{{ path('genre-index') }}#{{ genre_localized|slugify }}">
+                    <img src="{{ app.request.basepath }}/img/tile/{{ genre|slugify }}.{{ app.request.locale }}.svg" style="width: 100%; height: auto" alt="" />
+                    <div class="genre-arrow genre-{{ genre|slugify }}">{{ genre_localized }}</div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-4">
+                <h4><a href="{{ path('topic-index') }}">{{ 'Topics'|trans }}</a></h4>
+                <a href="{{ path('topic-index') }}">
+                    <img src="{{ app.request.basepath }}/img/tile/topic.svg" style="width: 100%; height: auto" alt="" />
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <h4><a href="{{ path('place-map') }}">{{ 'Map'|trans }}</a></h4>
+                <a href="{{ path('place-map') }}">
+                    <img src="{{ app.request.basepath }}/img/tile/map.svg" style="width: 100%; height: auto" alt="" />
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <h4><a href="{{ path('date-chronology') }}">{{ 'Chronology'|trans }}</a></h4>
+                <a href="{{ path('date-chronology') }}">
+                    <img src="{{ app.request.basepath }}/img/tile/chronology.svg" style="width: 100%; height: auto" alt="" />
+                </a>
+            </div>
+        </div>
     </div>
-{% endblock %}
+    {#
+    <div class="container-fluid box">
+        <div class="row box-header map">
+            <div class="col-sm-12">
+                <h4><a href="{{ path('place-map') }}">{{ 'Map'|trans }}</a></h4>
+            </div>
+        </div>
+        <div class="row box-content">
+            <div class="col-sm-12">
+                <div id="map-container">
+                    <div id="map" style="width: 100%; min-height: 320px"></div>
+                    <script>
+                    $( document).ready(function () {
+                        showMap();
+                    });
+
+                    {{ map.showMap(bounds, markers) }}
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid box" style="margin-top: 2em">
+        <div class="row box-header chronology">
+            <div class="col-sm-12">
+                <h4><a href="{{ path('date-chronology') }}">{{ 'Chronology'|trans }}</a></h4>
+            </div>
+        </div>
+        <div class="row box-content">
+            <div id="chronology" data-url="{{ path('date-chronology-partial') }}" style="max-height: 320px; overflow-y: scroll; overflow-x: hidden">
+                {{ 'Loading...' | trans }}
+                <script>
+                    var chronologyLoaded = false;
+
+                    $( document).ready(function () {
+                        if (!chronologyLoaded) {
+                            var pane = $( '#chronology' );
+                            var url = pane.attr("data-url");
+
+                            // ajax load from data-url
+                            $( pane ).load(url,function(result){
+                                chronologyLoaded = true;
+                            });
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    #}
+</div><!-- .jumbotron -->
+{% endblock contentcontainer %}

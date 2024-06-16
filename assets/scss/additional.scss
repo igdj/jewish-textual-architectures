@@ -228,6 +228,13 @@ header {
     margin-bottom: 20px;
 }
 
+#header-search-wrapper {
+    margin-top: 2rem; /* for the moment, move below language selector */
+    .form-control-feedback {
+        margin-left: -2rem;
+    }
+}
+
 footer {
     margin-top: 1rem;
     margin-bottom: 0;
@@ -238,6 +245,12 @@ footer {
         &:hover {
             color: $color-color-dark;
         }
+    }
+
+    #footer-funder {
+        background-color: white;
+        padding-top: 0;
+        padding-bottom: 16px;
     }
 
     #footer-social {
@@ -285,7 +298,7 @@ footer {
 }
 */
 
-h2, h3, h4 {
+h1, h2, h3, h4 {
     font-weight: 600;
 }
 
@@ -333,9 +346,97 @@ body[class*="route-about"], body.route-terms {
     }
 }
 
-#header-search-wrapper {
-    margin-top: 2rem; /* for the moment, move below language selector */
-    .form-control-feedback {
-        margin-left: -2rem;
+body.route-home {
+    a.genre-underlined {
+        font-weight: bold;
+        text-decoration: none;
+
+        display: block;
+        border-bottom: 4px solid;
+
+        &.genre-non-fictual {
+            border-bottom-color: $color-genre-non-fictual;
+            &:after {
+                color: $color-genre-non-fictual;
+            }
+        }
     }
+
+    #home-jumbotron {
+        background-color: $color-gray-ultralight;
+
+        a, a:visited {
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        div.genre-arrow {
+            margin-top: 8px;
+            border-bottom: 4px solid;
+
+            &:after {
+                font-size: 120%;
+                content: '\2794';
+                position: absolute;
+                right: 1.2rem;
+                bottom: 0;
+            }
+
+            &.genre-non-fictual {
+                border-bottom-color: $color-genre-non-fictual;
+                &:after {
+                    color: $color-genre-non-fictual;
+                }
+            }
+        }
+    }
+}
+
+body.route-genre-index, body.route-topic-index  {
+    #keyword-jumbotron {
+        background-color: $color-gray-ultralight;
+    }
+
+    .accordion {
+        .card {
+            border-radius: 0;
+            border-left: none;
+            border-right: none;
+            border-top: 1px solid $color-gray-light;
+
+            &.genre-non-fictual > .card-header {
+                border-bottom-color: $color-genre-non-fictual;
+            }
+        }
+
+        .card-header {
+            background-color: $color-gray-ultralight;
+            padding-left: 0;
+            padding-right: 0;
+            border-bottom: 4px solid $color-color-spot;
+
+            button {
+                font-size: 100%;
+                padding: 0;
+                font-weight: bold;
+                color: $color-link !important;
+            }
+        }
+
+        .card-body {
+            padding-left: 0;
+            padding-right: 0;
+            background-color: $color-gray-ultralight;
+
+            .article {
+                background-color: white;
+            }
+        }
+    }
+}
+
+h3#citation {
+    margin-top: 30px;
 }
