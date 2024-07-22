@@ -225,7 +225,8 @@ extends BaseCommand
 
                 $data['genre'] = $this->translator->trans('Source')
                                . ':'
-                               . /** @Ignore */ $this->translator->trans($type);
+                               . /** @Ignore */ $this->translator->trans($type)
+                               ;
 
                 if (!empty($result['url'])) {
                     $data['URLImages'] = $result['url'];
@@ -391,13 +392,15 @@ extends BaseCommand
         $teiHelper = new \TeiEditionBundle\Utils\TeiHelper();
 
         $uid = $langCode1 = null;
+        $siteKey = $this->getParameter('app.site.key');
+
         if (preg_match('/(article|source)\-(\d+)\.(de|en)\.(xml|tei)$/', $fname, $matches)) {
-            $uid = sprintf('jgo:%s-%d', $matches[1], $matches[2]);
+            $uid = sprintf('%s:%s-%d', $siteKey, $matches[1], $matches[2]);
             $langCode1 = $matches[3];
         }
         else if (preg_match('/(source)\-(\d+)\.(yi|yl|ja|la|sv|pt)\.(xml|tei)$/', $fname, $matches)) {
             // yiddish (hebrew), yiddish (latin), japanese, latin, swedish, portuguese
-            $uid = sprintf('jgo:%s-%d', $matches[1], $matches[2]);
+            $uid = sprintf('%s:%s-%d', $siteKey, $matches[1], $matches[2]);
             $langCode1 = $matches[3];
         }
 
