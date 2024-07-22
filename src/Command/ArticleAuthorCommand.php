@@ -118,6 +118,14 @@ extends BaseCommand
                         // try to create missing person from gnd
                         $this->insertMissingPerson($uri);
                         $person = $this->findPersonByUri($uri);
+
+                        if (!is_null($person)) {
+                            if (!empty($slug)) {
+                                $person->setSlug($slug);
+                                $this->em->persist($person);
+                                $this->flushEm($this->em);
+                            }
+                        }
                     }
 
                     // can't insert or update
@@ -145,6 +153,7 @@ extends BaseCommand
                             'position' => 'jobTitle',
                             'sex' => 'gender',
                             'url' => 'url',
+                            'gnd' => 'gnd',
                         ] as $src => $target)
                     {
                         if (!empty($user[$src])) {
