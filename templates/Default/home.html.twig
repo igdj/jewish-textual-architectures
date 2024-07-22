@@ -76,7 +76,7 @@
                 </div>
                 <div class="row box-color-content">
                     <div class="col-sm-12">
-                        <a href="https://igdj-hh.de/fileadmin/user_upload/CfP_Workshop_Hamburg_Juni_2024_Text_Englisch.pdf" target="_blank"><b>Constructions of Jewish Cultural Heritage in Fictional Texts on Architecture, City, and Space</b></a><br />
+                        <a href="{{ app.request.basepath }}/static/Workshop-Programm_final.pdf" target="_blank"><b>Constructions of Jewish Cultural Heritage in Fictional Texts on Architecture, City, and Space</b></a><br />
 Workshop at the Warburg-Haus, Heilwigstr. 116, 20249 Hamburg<br />
 Workshop period: June 26–27, 2024<br />
 Deadline: January 31, 2024
@@ -85,15 +85,14 @@ Deadline: January 31, 2024
                 {% else %}
                 <div class="row box-color-title">
                     <div class="col-sm-12">
-                        <h4>Call for Papers</h4>
+                        <h4>Workshop</h4>
                     </div>
                 </div>
                 <div class="row box-color-content">
                     <div class="col-sm-12">
-                        <a href="https://igdj-hh.de/fileadmin/user_upload/CfP_Workshop_Hamburg_Juni_2024_Text_Deutsch.pdf" target="_blank"><b>Konstruktionen jüdischen Kulturerbes in literarischen Texten zu Architektur, Stadt und Raum</b></a><br />
-Workshop im Warburg-Haus, Heilwigstr. 116, 20249 Hamburg<br />
-Tagungszeitraum: 26.–27. Juni 2024<br />
-Deadline: 31. Januar 2024
+                        <a href="{{ app.request.basepath }}/static/Workshop-Programm_final.pdf" target="_blank"><b>Konstruktionen jüdischen Kulturerbes in literarischen Texten zu Architektur, Stadt und Raum</b></a><br />
+Warburg-Haus, Heilwigstr. 116, 20249 Hamburg<br />
+Tagungszeitraum: 26.–27. Juni 2024
                     </div>
                 </div>
                 {% endif %}
