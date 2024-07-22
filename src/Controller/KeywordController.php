@@ -22,20 +22,21 @@ extends \TeiEditionBundle\Controller\TopicController
 
     /* TODO: inject these topics */
     static $TOPICS = [
-        'antisemitische/antijüdische (Um-)Deutung von jüdischen Architekturen und Räumen',
-        'Bauwerke und Räume als Ausdruck der Identitätsbildung, Sehnsuchtsorte',
-        'Identitätsbildung und Sehnsuchtsorte',
+        'Antisemitismus',
         'Denkmaldiskurs',
-        'Diaspora und „jüdische Nation“',
+        'Diaspora und jüdische Nation',
         'Eigenzuschreibung/Fremdzuschreibung',
-        'Kulturerbe in Grenzräumen (z. B. Elsass, Ostpreußen, Triest)',
-        'Kulturtransfer durch Migration: regional (Landflucht), pan-europäisch/global (Wirtschaftsflüchtlinge, z. B. Ostjuden in Berlin/Hamburg, Migration in die USA)',
-        'Kulturtransfer ins Exil',
-        'Räumliche Gegensätze',
+        'Exil',
+        'Grenzräumen',
+        'Identitäts- und Sehnsuchtsorte',
+        'Jüdischer Stil',
+        'Migration',
+        'Profanbauten',
+        'Sakralbauten',
         'Selbstverständnis/Akkulturation',
-        'Suche nach dem jüdischen Stil',
-        'Symbole/Ikonographie (Menora), eschatologisches (Himmlisches Jerusalem), Übergangsräume (Tore zum Himmel)',
-        'Zionismus: Importe von Bau- und Raumvorstellungen nach Israel',
+        'Stadträume',
+        'Symbole/Ikonografie',
+        'Zionismus',
     ];
 
     public static function fetchActiveKeywords(EntityManagerInterface $entityManager,
