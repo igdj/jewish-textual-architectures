@@ -74,7 +74,7 @@
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
         "igdj/tei-edition-bundle": "dev-symfony-6",
         "novaway/feature-flag-bundle": "^2.3",
-        "presta/sitemap-bundle": "^4.0",
+        "presta/sitemap-bundle": "^4.1",
         "symfony/apache-pack": "^1.0",
         "symfony/dotenv": "6.4.*",
         "symfony/flex": "^1.17|^2",
