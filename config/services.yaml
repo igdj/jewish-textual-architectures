@@ -46,6 +46,15 @@ parameters:
     app.datacite.user: SUBGOE.IGDJ
     app.datacite.password: ~
     app.datacite.prefix: 10.23691
+    app.datacite.funding: '
+        <fundingReferences>
+          <fundingReference>
+            <funderName>Deutsche Forschungsgemeinschaft</funderName>
+            <funderIdentifier funderIdentifierType="Crossref Funder ID">http://dx.doi.org/10.13039/501100001659</funderIdentifier>
+            <awardNumber awardURI="https://gepris.dfg.de/gepris/projekt/497336599">497336599</awardNumber>
+            <awardTitle>Konstruktionen jüdischen Kulturerbes in theoretisch-kritischen und literarischen Texten zu Architektur und Raum</awardTitle>
+          </fundingReference>
+        </fundingReferences>'
 
     #app.wordpress.url: 'https://diaspora.juedische-geschichte-online.net/cms/'
 
