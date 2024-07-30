@@ -437,6 +437,12 @@ body.route-genre-index, body.route-topic-index  {
     }
 }
 
+body.route-article {
+    .source-description .dta-p {
+        font-style: italic;
+    }
+}
+
 h3#citation {
     margin-top: 30px;
 }
