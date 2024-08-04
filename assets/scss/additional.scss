@@ -336,7 +336,53 @@ a[href="#description"]{
     }
 
     .source-description {
+        margin-top: 2rem;
         font-style: italic;
+    }
+}
+
+.sidebar {
+    .box {
+        .row {
+            border: none;
+            background-color: $color-gray-ultralight;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+
+            &.box-color-title, &.box-color-content-inverse {
+                background-color: $color-gray-ultralight;
+
+                a {
+                    color: $color-gray-dark;
+                }
+
+                h4 {
+                    margin: 0;
+                    color: $color-gray-dark;
+                    font-weight: bold;
+                    font-size: 1.3rem;
+
+                    a {
+                        color: $color-gray-dark;
+                    }
+                }
+            }
+        }
+    }
+}
+
+h3#citation {
+    margin-top: 30px;
+}
+
+.panel.source-box {
+    max-width: 640px;
+
+    .panel-heading {
+        background-color: $color-gray-dark;
+        padding: 4px;
     }
 }
 
@@ -360,7 +406,7 @@ body[class*="route-about"], body.route-terms {
     }
 }
 
-body.route-home {
+body.route-home, body.route-article, body.route-source {
     a.genre-underlined {
         font-weight: bold;
         text-decoration: none;
@@ -457,6 +503,14 @@ body.route-article {
     }
 }
 
-h3#citation {
-    margin-top: 30px;
+.route-date-chronology, .route-date-chronology-partial,
+.route-event-index
+{
+    .epoch-label {
+        position: relative;
+        h4 {
+            color: $color-gray-dark;
+            background-color: $color-color-chronology;
+        }
+    }
 }

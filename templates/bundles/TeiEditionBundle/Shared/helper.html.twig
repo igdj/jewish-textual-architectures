@@ -87,14 +87,18 @@
     &lt;{% if article.doi is not empty and not ('10.5072' in article.doi) %}<a href="https://dx.doi.org/{{ article.doi }}">https://dx.doi.org/{{ article.doi }}</a>{% else %}{{ url(app.request.attributes.get('_route')|replace({ '-pdf' : ''}), params) }}{% endif %}&gt; [{{ 'now'|date('F d, Y'|trans) }}].</p>
 {% endmacro %}
 
-{% macro keywords_linked(keywords, route = 'topic-background') %}
+{% macro keywords_linked(keywords, route = 'topic-background', wrap_col = true) %}
     {% for topic in keywords %}
         {% set slug = slugify.slugify(topic|trans({}, 'additional')) %}
-        {% if loop.first %}
+        {% set attr_class = '' %}
+        {% if 'genre-index' == route %}
+            {% set attr_class = ' class="genre-underlined genre-' ~ topic ~ '"' %}
+        {% endif %}
+        {% if wrap_col and loop.first %}
         <div class="col-sm-12">
         {% endif %}
-                <p><a href="{{ path(route) }}#{{ slug }}">{{ topic|trans({}, 'additional') }}</a></p>
-        {% if loop.last %}
+            <p><a href="{{ path(route) }}#{{ slug }}"{{ attr_class|raw }}>{{ topic|trans({}, 'additional') }}</a></p>
+        {% if wrap_col and loop.last %}
         </div>
         {% endif %}
     {% endfor %}
@@ -157,7 +161,7 @@
             {% set description = source.isPartOf.description %}
             {% if description is not empty %}
                     <div class="col-xs-8" style="font-size: 90%">
-                        {{ description|u.truncate(300, true, '') }}
+                        {{ description|u.truncate(300, '', false) }}
                         ... <a href="{{ path }}">{{ 'Show Source'|trans }} &gt;</a>
                     </div>
             {% endif %}
@@ -179,7 +183,7 @@
         </div>
         <div class="col-sm-8">
         <a href="{{ path }}">
-            <b>{{ source.name|u.truncate(160, true, '...') }}</b>{% if source.contentLocation is not empty %}, {{ source.contentLocation.name }}{% endif %}
+            <b>{{ source.name|u.truncate(160, '...', true) }}</b>{% if source.contentLocation is not empty %}, {{ source.contentLocation.name }}{% endif %}
         {% if source.dateCreated is not empty %},
             {% if source.dateCreatedDisplay is not empty %}{{ source.dateCreatedDisplay }}{% else %}{{ source.dateCreated|dateincomplete }}{% endif %}
         {% endif %}
@@ -432,6 +436,12 @@
                 </div>
             </div>
     {% if interpretations is not empty %}
+        {% set article = interpretations[0] %}
+        {% if article.keywords|extract_genres is not empty %}
+            <div class="mt-3">
+            {{ _self.keywords_linked(article.keywords|extract_genres, 'genre-index', false) }}
+            </div>
+        {% endif %}
             <div class="container-fluid box top-buffer">
                 <div class="row box-color-title">
                     <div class="col-sm-12">
@@ -444,14 +454,22 @@
                         <b>{{ helper.article_linked(article) }}</b>
                     </div>
                 </div>
-            {% if article.keywords is not empty %}
-                <div class="row box-color-content-inverse">
-                {{ _self.keywords_linked(article.keywords|extract_genres, 'genre-index') }}
-                {{ _self.keywords_linked(article.keywords|extract_topics, 'topic-index') }}
-                </div>
-            {% endif %}
         {% endfor %}
             </div>
+            {% set article = interpretations[0] %}
+            {% if article.keywords|extract_topics is not empty %}
+            <div class="container-fluid box top-buffer">
+                <div class="row box-color-title">
+                    <div class="col-sm-12">
+                        <h4>{{ 'topic.oneormany'|trans({ 'count': article.keywords|extract_topics|length }, 'additional') }}</h4>
+                    </div>
+                </div>
+
+                <div class="row box-color-content-inverse">
+                {{ _self.keywords_linked(article.keywords|extract_topics, 'topic-index') }}
+                </div>
+            </div>
+            {% endif %}
     {% endif %}
 
     {% if related|length >= 1 %}
