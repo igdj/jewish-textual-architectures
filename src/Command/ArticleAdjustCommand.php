@@ -378,7 +378,7 @@ extends BaseCommand
         return $data;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $fname = $input->getArgument('file');
 
