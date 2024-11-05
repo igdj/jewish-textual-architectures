@@ -77,6 +77,44 @@ In a `prod` environment, generate `public/css/base.css` and `public/css/print.cs
 
 - ./bin/console scss:compile
 
+### Solr Setup
+You can skip this installation in the first step. Everything except the
+search field should still work.
+
+First, download
+
+    https://archive.apache.org/dist/solr/solr/9.5.0/solr-9.5.0.tgz
+
+and extract the contents of `solr-9.5.0.tgz` into the existing `solr/` folder.
+
+Start solr by
+
+    ./solr/bin/solr start
+
+and then create the `jta_de` and `jta_en` cores
+
+    ./solr/bin/solr create -c jta_de
+    ./solr/bin/solr create -c jta_en
+
+You can clear the core and re-index existing entities
+
+    ./bin/console solr:index:clear
+
+    ./bin/console solr:index:populate "TeiEditionBundle\\Entity\\Person"
+    ./bin/console solr:index:populate "TeiEditionBundle\\Entity\\Organization"
+    ./bin/console solr:index:populate "TeiEditionBundle\\Entity\\Place"
+    ./bin/console solr:index:populate "TeiEditionBundle\\Entity\\Bibitem"
+    ./bin/console solr:index:populate "TeiEditionBundle\\Entity\\Event"
+    ./bin/console solr:index:populate "TeiEditionBundle\\Entity\\Article"
+
+For trouble-shooting, you can access the Solr admin interface at
+
+    http://localhost:8983/solr/
+
+To stop it again, call
+
+    ./solr/bin/solr stop -all
+
 Adding and updating Content
 ---------------------------
 TEI files and page facsimiles are located in `data` in the
