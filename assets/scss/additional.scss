@@ -451,6 +451,13 @@ body.route-home, body.route-article, body.route-source {
                 bottom: 0;
             }
 
+            &.genre-fictional {
+                border-bottom-color: $color-genre-fictional;
+                &:after {
+                    color: $color-genre-fictional;
+                }
+            }
+
             &.genre-non-fictional {
                 border-bottom-color: $color-genre-non-fictional;
                 &:after {
@@ -472,6 +479,10 @@ body.route-genre-index, body.route-topic-index  {
             border-left: none;
             border-right: none;
             border-top: 1px solid $color-gray-light;
+
+            &.genre-fictional > .card-header {
+                border-bottom-color: $color-genre-fictional;
+            }
 
             &.genre-non-fictional > .card-header {
                 border-bottom-color: $color-genre-non-fictional;

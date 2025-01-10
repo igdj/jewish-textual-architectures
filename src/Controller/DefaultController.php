@@ -73,7 +73,7 @@ extends \TeiEditionBundle\Controller\TopicController
                 : 'Default/home.html.twig',
             [
                 'pageTitle' => $translator->trans('Welcome'),
-                'genres' => KeywordController::fetchActiveKeywords($entityManager, $translator, $request->getLocale(), KeywordController::$GENRES),
+                'genres' => KeywordController::fetchActiveKeywords($entityManager, $translator, $request->getLocale(), KeywordController::$GENRES, false),
                 'topics' => $this->buildTopicsDescriptions($translator, $request->getLocale()),
                 'markers' => $markers,
                 'bounds' => $bounds,

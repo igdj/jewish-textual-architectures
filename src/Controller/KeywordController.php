@@ -17,8 +17,8 @@ class KeywordController
 extends \TeiEditionBundle\Controller\TopicController
 {
     static $GENRES = [
-        'fictional',
         'non-fictional',
+        'fictional',
     ];
 
     /* TODO: inject these topics */
@@ -67,7 +67,7 @@ extends \TeiEditionBundle\Controller\TopicController
 
         $keywords = [];
         foreach ($query->getResult() as $row) {
-            $keywords = array_unique($keywords + $row['keywords']);
+            $keywords = array_unique(array_merge($keywords, $row['keywords']));
         }
 
         if (!is_null($filter)) {
@@ -205,7 +205,7 @@ extends \TeiEditionBundle\Controller\TopicController
                                 EntityManagerInterface $entityManager,
                                 TranslatorInterface $translator)
     {
-        $articlesByGenre = $this->fetchArticlesByKeyword($entityManager, $translator, $request->getLocale(), self::$GENRES);
+        $articlesByGenre = $this->fetchArticlesByKeyword($entityManager, $translator, $request->getLocale(), self::$GENRES, false);
 
         return $this->render('Keyword/genre-index.html.twig', [
             'pageTitle' => $translator->trans('Genres'),
