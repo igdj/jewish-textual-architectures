@@ -17,7 +17,8 @@ class KeywordController
 extends \TeiEditionBundle\Controller\TopicController
 {
     static $GENRES = [
-        'non-fictual',
+        'fictional',
+        'non-fictional',
     ];
 
     /* TODO: inject these topics */

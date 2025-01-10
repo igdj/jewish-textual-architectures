@@ -414,10 +414,17 @@ body.route-home, body.route-article, body.route-source {
         display: block;
         border-bottom: 4px solid;
 
-        &.genre-non-fictual {
-            border-bottom-color: $color-genre-non-fictual;
+        &.genre-fictional {
+            border-bottom-color: $color-genre-fictional;
             &:after {
-                color: $color-genre-non-fictual;
+                color: $color-genre-fictional;
+            }
+        }
+
+        &.genre-non-fictional {
+            border-bottom-color: $color-genre-non-fictional;
+            &:after {
+                color: $color-genre-non-fictional;
             }
         }
     }
@@ -444,10 +451,10 @@ body.route-home, body.route-article, body.route-source {
                 bottom: 0;
             }
 
-            &.genre-non-fictual {
-                border-bottom-color: $color-genre-non-fictual;
+            &.genre-non-fictional {
+                border-bottom-color: $color-genre-non-fictional;
                 &:after {
-                    color: $color-genre-non-fictual;
+                    color: $color-genre-non-fictional;
                 }
             }
         }
@@ -466,8 +473,8 @@ body.route-genre-index, body.route-topic-index  {
             border-right: none;
             border-top: 1px solid $color-gray-light;
 
-            &.genre-non-fictual > .card-header {
-                border-bottom-color: $color-genre-non-fictual;
+            &.genre-non-fictional > .card-header {
+                border-bottom-color: $color-genre-non-fictional;
             }
         }
 
