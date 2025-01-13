@@ -26,7 +26,7 @@ extends \TeiEditionBundle\Controller\TopicController
     public function indexAction(Request $request,
                                 EntityManagerInterface $entityManager,
                                 TranslatorInterface $translator,
-                                FeatureManager $featureManager = null)
+                                ?FeatureManager $featureManager = null)
     {
         list($markers, $bounds) = $this->buildMap($entityManager, $request->getLocale());
 
