@@ -16,7 +16,7 @@ use Symfony\Component\Filesystem\Filesystem;
 class ArticleAdjustCommand
 extends BaseCommand
 {
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setName('article:adjust')
