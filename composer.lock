@@ -4,30 +4,31 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9254a67f1811f86dd5ca82f787e68b85",
+    "content-hash": "2b69f6acefd36ce1ae17ba5146a59330",
     "packages": [
         {
             "name": "armin/scssphp-bundle",
-            "version": "1.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/a-r-m-i-n/scssphp-bundle.git",
-                "reference": "273d566ce1acf552a5a3c1260502e1adf6a81d16"
+                "url": "https://github.com/burki/scssphp-bundle.git",
+                "reference": "e2f2aec9181c1bb0e8bda6c415fa33335f601f49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/a-r-m-i-n/scssphp-bundle/zipball/273d566ce1acf552a5a3c1260502e1adf6a81d16",
-                "reference": "273d566ce1acf552a5a3c1260502e1adf6a81d16",
+                "url": "https://api.github.com/repos/burki/scssphp-bundle/zipball/e2f2aec9181c1bb0e8bda6c415fa33335f601f49",
+                "reference": "e2f2aec9181c1bb0e8bda6c415fa33335f601f49",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "php": ">=7.2.0",
                 "scssphp/scssphp": "^1.10",
-                "symfony/asset": "^4.0 | ^5.0 | ^6.0",
-                "symfony/framework-bundle": "^4.0 | ^5.0 | ^6.0",
-                "symfony/twig-bridge": "^4.0 | ^5.0 | ^6.0"
+                "symfony/asset": "^4.0 | ^5.0 | ^6.0 | ^7.0",
+                "symfony/framework-bundle": "^4.0 | ^5.0 | ^6.0 | ^7.0",
+                "symfony/twig-bridge": "^4.0 | ^5.0 | ^6.0 | ^7.0"
             },
+            "default-branch": true,
             "type": "symfony-bundle",
             "extra": {
                 "symfony": {
@@ -39,7 +40,6 @@
                     "Armin\\ScssphpBundle\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -52,10 +52,9 @@
             ],
             "description": "Symfony bundle to parse scss sources at runtime.",
             "support": {
-                "issues": "https://github.com/a-r-m-i-n/scssphp-bundle/issues",
-                "source": "https://github.com/a-r-m-i-n/scssphp-bundle/tree/1.2.0"
+                "source": "https://github.com/burki/scssphp-bundle/tree/master"
             },
-            "time": "2022-03-20T18:51:10+00:00"
+            "time": "2024-12-18T07:13:24+00:00"
         },
         {
             "name": "beberlei/doctrineextensions",
@@ -1411,16 +1410,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "2.20.1",
+            "version": "2.20.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "e3cabade99ebccc6ba078884c1c5f250866a494e"
+                "reference": "19912de9270fa6abb3d25a1a37784af6b818d534"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/e3cabade99ebccc6ba078884c1c5f250866a494e",
-                "reference": "e3cabade99ebccc6ba078884c1c5f250866a494e",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/19912de9270fa6abb3d25a1a37784af6b818d534",
+                "reference": "19912de9270fa6abb3d25a1a37784af6b818d534",
                 "shasum": ""
             },
             "require": {
@@ -1507,9 +1506,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/orm/issues",
-                "source": "https://github.com/doctrine/orm/tree/2.20.1"
+                "source": "https://github.com/doctrine/orm/tree/2.20.2"
             },
-            "time": "2024-12-19T06:48:36+00:00"
+            "time": "2025-02-04T19:17:01+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -1772,16 +1771,16 @@
         },
         {
             "name": "fluentdom/fluentdom",
-            "version": "8.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ThomasWeinert/FluentDOM.git",
-                "reference": "22ee56352bb5fd0bc41ccf7906780aabc2bccf33"
+                "url": "https://github.com/burki/FluentDOM.git",
+                "reference": "b909731526e6414d46151c41728c7ca5156c31ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ThomasWeinert/FluentDOM/zipball/22ee56352bb5fd0bc41ccf7906780aabc2bccf33",
-                "reference": "22ee56352bb5fd0bc41ccf7906780aabc2bccf33",
+                "url": "https://api.github.com/repos/burki/FluentDOM/zipball/b909731526e6414d46151c41728c7ca5156c31ac",
+                "reference": "b909731526e6414d46151c41728c7ca5156c31ac",
                 "shasum": ""
             },
             "require": {
@@ -1800,6 +1799,7 @@
                 "ext-xmlwriter": "XMLWriter, Write large XMLs",
                 "fluentdom/css-selector": "Allows to use css selectors."
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -1809,7 +1809,6 @@
                     "FluentDOM\\": "src/FluentDOM"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1822,18 +1821,17 @@
             "description": "A fluent api for the php dom extension.",
             "homepage": "http://fluentdom.org",
             "keywords": [
-                "XMLReader",
-                "XMLWriter",
-                "Xpath",
                 "dom",
                 "jquery",
-                "xml"
+                "xml",
+                "xmlreader",
+                "xmlwriter",
+                "xpath"
             ],
             "support": {
-                "issues": "https://github.com/ThomasWeinert/FluentDOM/issues",
-                "source": "https://github.com/ThomasWeinert/FluentDOM/tree/8.0.0"
+                "source": "https://github.com/burki/FluentDOM/tree/master"
             },
-            "time": "2021-04-18T18:12:11+00:00"
+            "time": "2024-12-12T20:50:31+00:00"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -2612,16 +2610,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/igdj/lod-service.git",
-                "reference": "a3ecaa81bb648f77f418b2413f3c63f833ba315e"
+                "reference": "12c5243f72cd4750ecf863d39be790fcdde24200"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/igdj/lod-service/zipball/a3ecaa81bb648f77f418b2413f3c63f833ba315e",
-                "reference": "a3ecaa81bb648f77f418b2413f3c63f833ba315e",
+                "url": "https://api.github.com/repos/igdj/lod-service/zipball/12c5243f72cd4750ecf863d39be790fcdde24200",
+                "reference": "12c5243f72cd4750ecf863d39be790fcdde24200",
                 "shasum": ""
             },
             "require": {
-                "league/iso3166": "^3.0",
+                "league/iso3166": "^3.0|^4.0",
                 "ml/json-ld": "^1.1",
                 "php": "^7.3|^8.1",
                 "sweetrdf/easyrdf": "^1.1",
@@ -2645,7 +2643,7 @@
                 "source": "https://github.com/igdj/lod-service/tree/master",
                 "issues": "https://github.com/igdj/lod-service/issues"
             },
-            "time": "2024-07-29T16:15:54+00:00"
+            "time": "2025-02-05T15:59:57+00:00"
         },
         {
             "name": "igdj/tei-edition-bundle",
@@ -3423,28 +3421,32 @@
         },
         {
             "name": "league/iso3166",
-            "version": "3.0.0",
+            "version": "4.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alcohol/iso3166.git",
-                "reference": "9976d382f270ad3f3df8a68719beb7a7179ffa1e"
+                "reference": "5133fed7d54728222f4058702487dccedda20472"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alcohol/iso3166/zipball/9976d382f270ad3f3df8a68719beb7a7179ffa1e",
-                "reference": "9976d382f270ad3f3df8a68719beb7a7179ffa1e",
+                "url": "https://api.github.com/repos/alcohol/iso3166/zipball/5133fed7d54728222f4058702487dccedda20472",
+                "reference": "5133fed7d54728222f4058702487dccedda20472",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.3|^8.0"
+                "ext-mbstring": "*",
+                "php": "^7.4 || ^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.0"
+                "phpstan/phpstan": "^1.12.6",
+                "phpstan/phpstan-deprecation-rules": "^1.2.1",
+                "phpstan/phpstan-strict-rules": "^1.6.1",
+                "phpunit/phpunit": "^9.6.21"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.x-dev"
+                    "dev-master": "4.x-dev"
                 }
             },
             "autoload": {
@@ -3463,7 +3465,7 @@
                 }
             ],
             "description": "ISO 3166-1 PHP Library",
-            "homepage": "https://github.com/thephpleague/iso3166",
+            "homepage": "https://github.com/alcohol/iso3166",
             "keywords": [
                 "3166",
                 "3166-1",
@@ -3473,8 +3475,8 @@
                 "library"
             ],
             "support": {
-                "issues": "https://github.com/thephpleague/iso3166/issues",
-                "source": "https://github.com/thephpleague/iso3166"
+                "issues": "https://github.com/alcohol/iso3166/issues",
+                "source": "https://github.com/alcohol/iso3166"
             },
             "funding": [
                 {
@@ -3482,7 +3484,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-05T06:50:42+00:00"
+            "time": "2024-10-10T07:39:24+00:00"
         },
         {
             "name": "liip/url-auto-converter-bundle",
@@ -5503,31 +5505,31 @@
         },
         {
             "name": "setasign/fpdi",
-            "version": "v2.6.2",
+            "version": "v2.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Setasign/FPDI.git",
-                "reference": "9e013b376939c0d4029f54150d2a16f3c67a5797"
+                "reference": "67c31f5e50c93c20579ca9e23035d8c540b51941"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Setasign/FPDI/zipball/9e013b376939c0d4029f54150d2a16f3c67a5797",
-                "reference": "9e013b376939c0d4029f54150d2a16f3c67a5797",
+                "url": "https://api.github.com/repos/Setasign/FPDI/zipball/67c31f5e50c93c20579ca9e23035d8c540b51941",
+                "reference": "67c31f5e50c93c20579ca9e23035d8c540b51941",
                 "shasum": ""
             },
             "require": {
                 "ext-zlib": "*",
-                "php": "^5.6 || ^7.0 || ^8.0"
+                "php": "^7.1 || ^8.0"
             },
             "conflict": {
                 "setasign/tfpdf": "<1.31"
             },
             "require-dev": {
-                "phpunit/phpunit": "~5.7",
+                "phpunit/phpunit": "^7",
                 "setasign/fpdf": "~1.8.6",
                 "setasign/tfpdf": "~1.33",
                 "squizlabs/php_codesniffer": "^3.5",
-                "tecnickcom/tcpdf": "~6.2"
+                "tecnickcom/tcpdf": "^6.2"
             },
             "suggest": {
                 "setasign/fpdf": "FPDI will extend this class but as it is also possible to use TCPDF or tFPDF as an alternative. There's no fixed dependency configured."
@@ -5563,7 +5565,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Setasign/FPDI/issues",
-                "source": "https://github.com/Setasign/FPDI/tree/v2.6.2"
+                "source": "https://github.com/Setasign/FPDI/tree/v2.6.3"
             },
             "funding": [
                 {
@@ -5571,7 +5573,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-12-10T13:12:19+00:00"
+            "time": "2025-02-05T13:22:35+00:00"
         },
         {
             "name": "solarium/solarium",
@@ -5643,16 +5645,16 @@
         },
         {
             "name": "square-bit/oai-pmh",
-            "version": "v0.3",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/square-bit/OaiPmh.git",
-                "reference": "349030bc38754cfd770712ac4248357d1a35b60c"
+                "url": "https://github.com/burki/OaiPmh.git",
+                "reference": "80ba3cb347b4a9a56fcd104f72f806e25ad7c63d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/square-bit/OaiPmh/zipball/349030bc38754cfd770712ac4248357d1a35b60c",
-                "reference": "349030bc38754cfd770712ac4248357d1a35b60c",
+                "url": "https://api.github.com/repos/burki/OaiPmh/zipball/80ba3cb347b4a9a56fcd104f72f806e25ad7c63d",
+                "reference": "80ba3cb347b4a9a56fcd104f72f806e25ad7c63d",
                 "shasum": ""
             },
             "require": {
@@ -5667,13 +5669,18 @@
                 "phpunit/phpunit": "^4.8 || ^8.5 || ^9.5",
                 "squizlabs/php_codesniffer": "^2.3 || ^3.7"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Picturae\\OaiPmh\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "post-install-cmd": [
+                    "bash contrib/setup.sh"
+                ]
+            },
             "license": [
                 "GPL-3.0-or-later"
             ],
@@ -5685,9 +5692,9 @@
             ],
             "description": "Picturae OAI-PMH package. Can be used to create a OAI endpoint",
             "support": {
-                "source": "https://github.com/square-bit/OaiPmh/tree/v0.3"
+                "source": "https://github.com/burki/OaiPmh/tree/master"
             },
-            "time": "2024-02-04T22:24:42+00:00"
+            "time": "2024-12-30T12:44:20+00:00"
         },
         {
             "name": "stof/doctrine-extensions-bundle",
@@ -5951,16 +5958,16 @@
         },
         {
             "name": "sylius/theme-bundle",
-            "version": "v2.4.0",
+            "version": "2.4.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Sylius/SyliusThemeBundle.git",
-                "reference": "aff44bac460ca62a3b8116787becb4cdd1fd5295"
+                "url": "https://github.com/burki/SyliusThemeBundle.git",
+                "reference": "1e7940febb2fac919fb61b58d1c99c7c1e15254c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/SyliusThemeBundle/zipball/aff44bac460ca62a3b8116787becb4cdd1fd5295",
-                "reference": "aff44bac460ca62a3b8116787becb4cdd1fd5295",
+                "url": "https://api.github.com/repos/burki/SyliusThemeBundle/zipball/1e7940febb2fac919fb61b58d1c99c7c1e15254c",
+                "reference": "1e7940febb2fac919fb61b58d1c99c7c1e15254c",
                 "shasum": ""
             },
             "require": {
@@ -5994,6 +6001,7 @@
                 "twig/twig": "^2.0 || ^3.0",
                 "vimeo/psalm": "5.20.0"
             },
+            "default-branch": true,
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -6005,7 +6013,31 @@
                     "Sylius\\Bundle\\ThemeBundle\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "spec\\Sylius\\Bundle\\ThemeBundle\\": "spec/",
+                    "Sylius\\Bundle\\ThemeBundle\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "analyse": [
+                    "@composer validate --strict",
+                    "vendor/bin/ecs check spec src tests || true",
+                    "vendor/bin/psalm",
+                    "vendor/bin/rector process --dry-run",
+                    "tests/Application/bin/console lint:container --env dev",
+                    "tests/Application/bin/console lint:container --env prod"
+                ],
+                "fix": [
+                    "vendor/bin/rector process",
+                    "vendor/bin/ecs check spec src tests --fix"
+                ],
+                "test": [
+                    "vendor/bin/phpspec run --ansi --no-interaction",
+                    "vendor/bin/phpunit --colors=always",
+                    "APP_ENV=test_legacy vendor/bin/phpunit --colors=always --exclude-group=none"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -6030,10 +6062,9 @@
                 "theming"
             ],
             "support": {
-                "issues": "https://github.com/Sylius/SyliusThemeBundle/issues",
-                "source": "https://github.com/Sylius/SyliusThemeBundle/tree/v2.4.0"
+                "source": "https://github.com/burki/SyliusThemeBundle/tree/2.4"
             },
-            "time": "2024-07-19T08:08:48+00:00"
+            "time": "2025-01-13T11:29:56+00:00"
         },
         {
             "name": "symfony/apache-pack",
@@ -11407,17 +11438,39 @@
     ],
     "aliases": [
         {
+            "package": "fluentdom/fluentdom",
+            "version": "9999999-dev",
+            "alias": "8.0",
+            "alias_normalized": "8.0.0.0"
+        },
+        {
             "package": "gmo/iso-639",
             "version": "9999999-dev",
             "alias": "1.0",
             "alias_normalized": "1.0.0.0"
+        },
+        {
+            "package": "square-bit/oai-pmh",
+            "version": "9999999-dev",
+            "alias": "0.3",
+            "alias_normalized": "0.3.0.0"
+        },
+        {
+            "package": "sylius/theme-bundle",
+            "version": "2.4.9999999.9999999-dev",
+            "alias": "2.4",
+            "alias_normalized": "2.4.0.0"
         }
     ],
     "minimum-stability": "dev",
     "stability-flags": {
+        "armin/scssphp-bundle": 20,
+        "fluentdom/fluentdom": 20,
         "gmo/iso-639": 20,
         "hedii/zotero-api": 20,
-        "igdj/tei-edition-bundle": 20
+        "igdj/tei-edition-bundle": 20,
+        "square-bit/oai-pmh": 20,
+        "sylius/theme-bundle": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
