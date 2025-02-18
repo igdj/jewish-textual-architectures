@@ -17,7 +17,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     </address>
                 </publisher>
                 <pubPlace>Hamburg</pubPlace>
-                <date type="publication">2023-09-27</date>
+                <date type="publication">2025-02-17</date>
                 <!--
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by-nc/3.0/de/">
@@ -42,10 +42,24 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 <head>Das Team</head>
                 <lb/>
 
-                <p><hi rendition="#b">PD Dr. Andreas Brämer (IGdJ, Projektleitung)</hi>
-                    <lb/>
-                    Andreas Brämer ist stellvertretender Direktor am IGdJ. Er studierte an der Hochschule für Jüdische Studien Heidelberg sowie an der Hebräischen Universität in Jerusalem. Promoviert wurde er im Fach Judaistik an der Freien Universität Berlin – mit einer Dissertation über den Rabbiner Zacharias Frankel. Bevor Andreas Brämer 1997 an das IGdJ wechselte, war er als wissenschaftlicher Mitarbeiter an der Hochschule für Jüdische Studien sowie in der Gesamthochschule Duisburg tätig. Seit seiner Habilitation 2006 unterrichtet er auch als Privatdozent im Fachbereich Geschichte der Universität Hamburg. Andreas Brämer ist Mitglied im Vorstand der <ref target="http://wag-leobaeck.de/">Wissenschaftlichen Arbeitsgemeinschaft des Leo Baeck Instituts</ref> sowie Vorsitzender der <ref target="https://gegj.de/">Gesellschaft zur Erforschung der Geschichte der Juden e. V.</ref> Zudem ist er Mitglied im Advisory Board des <ref target="https://www.leobaeck.co.uk/the-lbi-year-book-2">Leo Baeck Institute Yearbook</ref>.
-                </p>
+                <p><hi rendition="#b">PD Dr. Andreas Brämer (HfJS, Projektleitung)</hi>
+                    <lb/> Andreas Brämer ist seit Oktober 2024 Rektor der Hochschule für Jüdische
+                    Studien Heidelberg. Er studierte an der Hochschule für Jüdische Studien
+                    Heidelberg sowie an der Hebräischen Universität in Jerusalem. Promoviert wurde
+                    er im Fach Judaistik an der Freien Universität Berlin – mit einer Dissertation
+                    über den Rabbiner Zacharias Frankel. Bevor Andreas Brämer 1997 an das IGdJ
+                    wechselte, war er als wissenschaftlicher Mitarbeiter an der Hochschule für
+                    Jüdische Studien sowie in der Gesamthochschule Duisburg tätig. 2005 wurde er zum
+                    stellvertretenden Direktor des IGdJ ernannt, als dessen kommissarischer Leiter
+                    er zudem 2011/12 sowie 2020/21 amtierte. Nach seiner Habilitation 2006
+                    unterrichtete er auch als Privatdozent im Fachbereich Geschichte der Universität
+                    Hamburg. Andreas Brämer ist Mitglied im Vorstand der <ref
+                        target="http://wag-leobaeck.de/">Wissenschaftlichen Arbeitsgemeinschaft des
+                        Leo Baeck Instituts</ref> sowie Vorsitzender der <ref
+                        target="https://gegj.de/">Gesellschaft zur Erforschung der Geschichte der
+                        Juden e. V.</ref> Zudem ist er Mitglied im Advisory Board des <ref
+                        target="https://www.leobaeck.co.uk/the-lbi-year-book-2">Leo Baeck Institute
+                        Yearbook</ref>. </p>
 
                 <p><hi rendition="#b">PD Dr.-Ing. habil. Ulrich Knufinke (Bet Tfila –
                         Forschungsstelle, Projektleitung)</hi>
