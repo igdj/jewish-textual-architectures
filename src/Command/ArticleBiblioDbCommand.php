@@ -1,4 +1,5 @@
 <?php
+
 // src/Command/ArticleBiblioDbCommand.php
 
 namespace App\Command;
@@ -7,14 +8,12 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-
 use Symfony\Component\Filesystem\Filesystem;
 
 /**
  * Extract bibliographic items from TEI and insert/update into Bibitem.
  */
-class ArticleBiblioDbCommand
-extends BaseCommand
+class ArticleBiblioDbCommand extends BaseCommand
 {
     protected function configure(): void
     {
@@ -54,10 +53,12 @@ extends BaseCommand
 
             $query = $this->em
                 ->createQuery('SELECT DISTINCT b.slug FROM \TeiEditionBundle\Entity\Bibitem b WHERE b.status >= 0')
-                ;
+            ;
 
-            $items = array_flip(array_map(function ($res) { return $res['slug']; },
-                               array_values($query->getResult())));
+            $items = array_flip(array_map(
+                function ($res) { return $res['slug']; },
+                array_values($query->getResult())
+            ));
         }
         else {
             $fs = new Filesystem();
@@ -91,13 +92,17 @@ extends BaseCommand
                 // either insert or update
                 $zoteroItems = $this->findZoteroItemsBySlug($key, $output);
                 if (empty($zoteroItems)) {
-                    $output->writeln(sprintf('<error>No Zotero entry found for %s</error>',
-                                             trim($key)));
+                    $output->writeln(sprintf(
+                        '<error>No Zotero entry found for %s</error>',
+                        trim($key)
+                    ));
                     continue;
                 }
                 else if (count($zoteroItems) > 1) {
-                    $output->writeln(sprintf('<error>More than one Zotero entry found for %s</error>',
-                                             trim($key)));
+                    $output->writeln(sprintf(
+                        '<error>More than one Zotero entry found for %s</error>',
+                        trim($key)
+                    ));
                     continue;
                 }
 
@@ -120,28 +125,27 @@ extends BaseCommand
 
                 // var_dump($zoteroData);
                 foreach ([
-                        'itemType' => 'itemType',
-                        'title' => 'name',
-                        'bookTitle' => 'containerName',
-                        'encyclopediaTitle' => 'containerName',
-                        'publicationTitle' => 'containerName',
-                        'creators' => 'creators',
-                        'series' => 'series',
-                        'seriesNumber' => 'seriesNumber',
-                        'volume' => 'volume',
-                        'numberOfVolumes' => 'numberOfVolumes',
-                        'edition' => 'bookEdition',
-                        'place' => 'publicationLocation',
-                        'publisher' => 'publisher',
-                        'date' => 'datePublished',
-                        'pages' => 'pagination',
-                        'numPages' => 'numberOfPages',
-                        'language' => 'language',
-                        'DOI' => 'doi',
-                        'ISBN' => 'isbn',
-                        'url' => 'url',
-                    ] as $src => $target)
-                {
+                    'itemType' => 'itemType',
+                    'title' => 'name',
+                    'bookTitle' => 'containerName',
+                    'encyclopediaTitle' => 'containerName',
+                    'publicationTitle' => 'containerName',
+                    'creators' => 'creators',
+                    'series' => 'series',
+                    'seriesNumber' => 'seriesNumber',
+                    'volume' => 'volume',
+                    'numberOfVolumes' => 'numberOfVolumes',
+                    'edition' => 'bookEdition',
+                    'place' => 'publicationLocation',
+                    'publisher' => 'publisher',
+                    'date' => 'datePublished',
+                    'pages' => 'pagination',
+                    'numPages' => 'numberOfPages',
+                    'language' => 'language',
+                    'DOI' => 'doi',
+                    'ISBN' => 'isbn',
+                    'url' => 'url',
+                ] as $src => $target) {
                     $val = array_key_exists($src, $zoteroData) ? $zoteroData[$src] : null;
                     if (is_null($val) && 'containerName' == $target) {
                         // skip on null since multiple $src can set this

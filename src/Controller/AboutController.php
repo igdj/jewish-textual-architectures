@@ -5,14 +5,12 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-
 use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
  * Render the data/tei/about-*.locale.xml
  */
-class AboutController
-extends \TeiEditionBundle\Controller\RenderTeiController
+class AboutController extends \TeiEditionBundle\Controller\RenderTeiController
 {
     /**
      * Render about-text from TEI to HTML
@@ -40,10 +38,11 @@ extends \TeiEditionBundle\Controller\RenderTeiController
      * Render about-text from TEI to HTML
      * If $title is null, extract from TEI
      */
-    protected function renderTitleContent(Request $request,
-                                          $template,
-                                          $title = null)
-    {
+    protected function renderTitleContent(
+        Request $request,
+        $template,
+        $title = null
+    ) {
         $route = $request->get('_route');
         $locale = $request->getLocale();
         $fnameTei = $route . '.' . $locale . '.xml';
@@ -68,10 +67,11 @@ extends \TeiEditionBundle\Controller\RenderTeiController
      * xRoute("/terms", name="terms")
      * @Route("/contact", name="contact")
      */
-    public function renderAbout(Request $request,
-                                TranslatorInterface $translator,
-                                $title = null)
-    {
+    public function renderAbout(
+        Request $request,
+        TranslatorInterface $translator,
+        $title = null
+    ) {
         return $this->renderTitleContent($request, 'About/sitetext.html.twig', $title);
     }
 

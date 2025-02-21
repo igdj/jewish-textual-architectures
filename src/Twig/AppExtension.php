@@ -1,10 +1,10 @@
 <?php
 
 // src/Twig/AppExtension.php
+
 namespace App\Twig;
 
 use Symfony\Contracts\Translation\TranslatorInterface;
-
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;
 
@@ -27,8 +27,8 @@ class AppExtension extends AbstractExtension
     {
         return [
             // site specific
-            new TwigFilter('extract_genres', 'App\\Controller\\KeywordController::extractGenres' ),
-            new TwigFilter('extract_topics', 'App\\Controller\\KeywordController::extractTopics' ),
+            new TwigFilter('extract_genres', 'App\\Controller\\KeywordController::extractGenres'),
+            new TwigFilter('extract_topics', 'App\\Controller\\KeywordController::extractTopics'),
         ];
     }
 }

@@ -1,20 +1,18 @@
 <?php
+
 // src/Controller/KeywordController.php
 
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
-
 use Symfony\Contracts\Translation\TranslatorInterface;
-
 use Doctrine\ORM\EntityManagerInterface;
 
 /**
  *
  */
-class KeywordController
-extends \TeiEditionBundle\Controller\TopicController
+class KeywordController extends \TeiEditionBundle\Controller\TopicController
 {
     static $GENRES = [
         'non-fictional',
@@ -40,10 +38,13 @@ extends \TeiEditionBundle\Controller\TopicController
         'Zionismus',
     ];
 
-    public static function fetchActiveKeywords(EntityManagerInterface $entityManager,
-                                               TranslatorInterface $translator,
-                                               $locale, ?array $filter = null, $sortByKeyword = true)
-    {
+    public static function fetchActiveKeywords(
+        EntityManagerInterface $entityManager,
+        TranslatorInterface $translator,
+        $locale,
+        ?array $filter = null,
+        $sortByKeyword = true
+    ) {
         $language = null;
         if (!empty($locale)) {
             $language = \TeiEditionBundle\Utils\Iso639::code1to3($locale);
@@ -58,7 +59,7 @@ extends \TeiEditionBundle\Controller\TopicController
             ->where('A.status = 1')
             ->andWhere('A.language = :language')
             ->andWhere("A.articleSection IN ('interpretation')")
-            ;
+        ;
 
         $query = $qb->getQuery();
         if (!empty($language)) {
@@ -77,9 +78,13 @@ extends \TeiEditionBundle\Controller\TopicController
         if ($sortByKeyword) {
             $coll = collator_create($locale);
             usort($keywords, function ($keywordA, $keywordB) use ($translator, $coll) {
-                return collator_compare($coll,
-                                        /** @Ignore */$translator->trans($keywordA, [], 'additional'),
-                                        /** @Ignore */$translator->trans($keywordB, [], 'additional'));
+                return collator_compare(
+                    $coll,
+                    /** @Ignore */
+                    $translator->trans($keywordA, [], 'additional'),
+                    /** @Ignore */
+                    $translator->trans($keywordB, [], 'additional')
+                );
             });
         }
 
@@ -136,10 +141,13 @@ extends \TeiEditionBundle\Controller\TopicController
         return $topics;
     }
 
-    protected function fetchArticlesByKeyword(EntityManagerInterface $entityManager,
-                                              TranslatorInterface $translator,
-                                              $locale, ?array $filter = null, $sortByKeyword = true)
-    {
+    protected function fetchArticlesByKeyword(
+        EntityManagerInterface $entityManager,
+        TranslatorInterface $translator,
+        $locale,
+        ?array $filter = null,
+        $sortByKeyword = true
+    ) {
         $language = null;
         if (!empty($locale)) {
             $language = \TeiEditionBundle\Utils\Iso639::code1to3($locale);
@@ -151,14 +159,14 @@ extends \TeiEditionBundle\Controller\TopicController
                 ->createQueryBuilder();
 
         $qb->select([ 'A',
-                $sort . ' HIDDEN articleSort'
-            ])
+            $sort . ' HIDDEN articleSort',
+        ])
             ->from('\TeiEditionBundle\Entity\Article', 'A')
             ->where('A.status = 1')
             ->andWhere('A.language = :language')
             ->andWhere("A.articleSection IN ('interpretation')")
             ->orderBy('articleSort, A.creator, A.name')
-            ;
+        ;
 
         $query = $qb->getQuery();
         if (!empty($language)) {
@@ -189,9 +197,13 @@ extends \TeiEditionBundle\Controller\TopicController
         if ($sortByKeyword) {
             $coll = collator_create($locale);
             uksort($articlesByKeyword, function ($keywordA, $keywordB) use ($translator, $coll) {
-                return collator_compare($coll,
-                                        /** @Ignore */$translator->trans($keywordA, [], 'additional'),
-                                        /** @Ignore */$translator->trans($keywordB, [], 'additional'));
+                return collator_compare(
+                    $coll,
+                    /** @Ignore */
+                    $translator->trans($keywordA, [], 'additional'),
+                    /** @Ignore */
+                    $translator->trans($keywordB, [], 'additional')
+                );
             });
         }
 
@@ -201,10 +213,11 @@ extends \TeiEditionBundle\Controller\TopicController
     /**
      * @Route("/genre", name="genre-index")
      */
-    public function genreAction(Request $request,
-                                EntityManagerInterface $entityManager,
-                                TranslatorInterface $translator)
-    {
+    public function genreAction(
+        Request $request,
+        EntityManagerInterface $entityManager,
+        TranslatorInterface $translator
+    ) {
         $articlesByGenre = $this->fetchArticlesByKeyword($entityManager, $translator, $request->getLocale(), self::$GENRES, false);
 
         return $this->render('Keyword/genre-index.html.twig', [
@@ -216,10 +229,11 @@ extends \TeiEditionBundle\Controller\TopicController
     /**
      * @Route("/topic", name="topic-index")
      */
-    public function indexAction(Request $request,
-                                EntityManagerInterface $entityManager,
-                                TranslatorInterface $translator)
-    {
+    public function indexAction(
+        Request $request,
+        EntityManagerInterface $entityManager,
+        TranslatorInterface $translator
+    ) {
         $articlesByTopic = $this->fetchArticlesByKeyword($entityManager, $translator, $request->getLocale(), self::$TOPICS);
 
         return $this->render('Keyword/topic-index.html.twig', [
