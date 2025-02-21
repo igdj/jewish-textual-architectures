@@ -5,7 +5,7 @@ License
 -------
     Code for the Front-end of jewish-textual-architectures.online
 
-    (C) 2024 Institute for the History of the German Jews (IGdJ)
+    (C) 2024-2025 Institute for the History of the German Jews (IGdJ)
         Daniel Burckhardt
 
 
