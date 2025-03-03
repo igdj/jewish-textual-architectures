@@ -45,7 +45,7 @@ Installation
 
 In a fitting directory (e.g. `/var/www`), clone the project
 
-    git clone https://github.com/burki/jewish-textual-architectures.git
+    git clone https://github.com/igdj/jewish-textual-architectures.git
 
 If you don't have `git` installed, you can also download the project as ZIP-file
 and extract it manually.
