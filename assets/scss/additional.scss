@@ -354,7 +354,7 @@ a[href="#description"]{
             &.box-color-title, &.box-color-content-inverse {
                 background-color: $color-gray-ultralight;
 
-                a {
+                a, a:visited {
                     color: $color-gray-dark;
                 }
 
