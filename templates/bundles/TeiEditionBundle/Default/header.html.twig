@@ -13,7 +13,15 @@
                                     {% else %}
                                         {% set route_params = app.request.attributes.get('_route_params')|merge(app.request.query.all) %}
                                     {% endif %}
-                                    <a href="{{ path(app.request.attributes.get('_route'), route_params|merge({"_locale": locale})) }}">{{ locale }}</a>
+                                    {% set route = app.request.attributes.get('_route') %}
+                                    {% if locale != app.request.locale and locale == 'en' %}
+                                        {# currently, en has limited navigation #}
+                                        {% if not (route in ['home', 'contact'] or route starts with 'about') %}
+                                            {% set route = 'home' %}
+                                            {% set route_params = {} %}
+                                        {% endif %}
+                                    {% endif %}
+                                    <a href="{{ path(route, route_params|merge({"_locale": locale})) }}">{{ locale }}</a>
                                 </li>
                             {% endfor %}
                             </ul>
