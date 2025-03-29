@@ -3,7 +3,7 @@
                 <div class="container d-flex align-items-end justify-content-end">
                     <div>
                         <a href="https://spp-juedisches-kulturerbe.de/{% if 'en' == app.request.locale %}en/home/{% endif %}" target="_blank">
-                            <img style="height: 100px; width: auto" src="{{ app.request.basepath }}/img/spp-2537.png" alt="{{ 'DFG Priority Program 2357 “Jewish Cultural Heritage”'|trans }}">
+                            <img style="height: 100px; width: auto" src="{{ app.request.basepath }}/img/spp-2537.{{ app.request.locale }}.svg" alt="{{ 'DFG Priority Program 2357 â€œJewish Cultural Heritageâ€'|trans }}">
                         </a>
                     </div>
                     <div class="ml-5">

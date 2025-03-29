@@ -121,12 +121,6 @@ Warburg-Haus, Heilwigstr. 116, 20249 Hamburg<br />
 Workshop period: June 26–27, 2024
                     </div>
                 </div>
-                <a href="https://gepris.dfg.de/gepris/projekt/497336599?language=en" target="_blank">
-                    <img class="d-block w-100 mt-4" src="{{ app.request.basepath }}/img/dfg_logo_schriftzug_blau_foerderung.en.gif" alt="Funded by the Deutsche Forschungsgemeinschaft">
-                </a>
-                <a href="https://spp-juedisches-kulturerbe.de/en/home/" target="_blank">
-                    <img class="d-block w-100" src="{{ app.request.basepath }}/img/spp-2537.png" alt="DFG Priority Program 2357 “Jewish Cultural Heritage”" style="margin-top: 4rem">
-                </a>
                 {% else %}
                 <div class="row box-color-title">
                     <div class="col-sm-12">
@@ -140,20 +134,14 @@ Warburg-Haus, Heilwigstr. 116, 20249 Hamburg<br />
 Tagungszeitraum: 26.–27. Juni 2024
                     </div>
                 </div>
-                <a href="https://gepris.dfg.de/gepris/projekt/497336599?language=de" target="_blank">
-                    <img class="d-block w-100 mt-4" src="{{ app.request.basepath }}/img/dfg_logo_schriftzug_blau_foerderung.de.gif" alt="Gefördert durch Deutsche Forschungsgemeinschaft">
-                </a>
-                <a href="https://spp-juedisches-kulturerbe.de/" target="_blank">
-                    <img class="d-block w-100" src="{{ app.request.basepath }}/img/spp-2537.png" alt="DFG-Schwerpunktprogramm 2357 „Jüdisches Kulturerbe“" style="margin-top: 4rem">
-                </a>
                 {% endif %}
                 {#
-                <!--
-                <div class="row box-color-content border-top">
-                    <div class="col-sm-12">
-                    </div>
-                </div>
-                -->
+                <a href="https://gepris.dfg.de/gepris/projekt/497336599?language={{ app.request.locale }}" target="_blank">
+                    <img class="d-block w-100 mt-4" src="{{ app.request.basepath }}/img/dfg_logo_schriftzug_blau_foerderung.{{ app.request.locale }}.gif"  alt="{{ 'Funded by the Deutsche Forschungsgemeinschaft'|trans }}">
+                </a>
+                <a href="https://spp-juedisches-kulturerbe.de/" target="_blank">
+                    <img class="d-block w-100"  src="{{ app.request.basepath }}/img/spp-2537.{{ app.request.locale }}.svg" alt="{{ 'DFG Priority Program 2357 “Jewish Cultural Heritage”'|trans }}" style="margin-top: 4rem">
+                </a>
                 #}
             </div>
         </div>
