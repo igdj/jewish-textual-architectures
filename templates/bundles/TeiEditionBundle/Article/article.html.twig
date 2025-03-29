@@ -38,8 +38,10 @@
     <div class="row">
         <div class="col-xs-12 col-sm-8">
         {% if source_description is not empty %}
-        <h2>{{ 'Source Description'|trans }}</h2>
-        {{ source_description|raw }}
+            {% if related|length > 0 %}
+            <h2>{{ 'Source Description'|trans }}</h2>
+            {% endif %}
+            {{ source_description|raw }}
         {% endif %}
 
         {{ html|raw }}
