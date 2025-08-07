@@ -53,6 +53,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/burki/FeedBundle"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/burki/FluentDOM"
         },
         {
@@ -86,14 +90,14 @@
         "ext-iconv": "*",
         "ext-intl": "*",
         "armin/scssphp-bundle": "dev-master",
+        "eko/feedbundle": "dev-master as 2.2.1",
         "fluentdom/fluentdom": "dev-master as 8.0",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
         "igdj/tei-edition-bundle": "dev-symfony-6",
-        "novaway/feature-flag-bundle": "^2.3",
+        "novaway/feature-flag-bundle": "^2.7",
         "presta/sitemap-bundle": "^4.1",
         "square-bit/oai-pmh": "dev-master as 0.3",
-        "sylius/theme-bundle": "^2.4",
         "symfony/apache-pack": "^1.0",
         "symfony/dotenv": "6.4.*",
         "symfony/flex": "^1.17|^2",
@@ -103,7 +107,7 @@
         "vnn/wordpress-rest-api-client": "dev-master"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.69",
+        "friendsofphp/php-cs-fixer": "^3.70",
         "phpstan/phpstan": "^2.1",
         "symfony/debug-bundle": "6.4.*",
         "symfony/maker-bundle": "^1.43",
@@ -123,7 +127,10 @@
     "replace": {
         "symfony/polyfill-ctype": "*",
         "symfony/polyfill-iconv": "*",
-        "symfony/polyfill-php72": "*"
+        "symfony/polyfill-php72": "*",
+        "symfony/polyfill-php73": "*",
+        "symfony/polyfill-php74": "*",
+        "symfony/polyfill-php80": "*"
     },
     "scripts": {
         "auto-scripts": {
