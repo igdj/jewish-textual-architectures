@@ -14,13 +14,13 @@ use Doctrine\ORM\EntityManagerInterface;
  */
 class KeywordController extends \TeiEditionBundle\Controller\TopicController
 {
-    static $GENRES = [
+    public static $GENRES = [
         'non-fictional',
         'fictional',
     ];
 
     /* TODO: inject these topics */
-    static $TOPICS = [
+    public static $TOPICS = [
         'Antisemitismus',
         'Denkmaldiskurs',
         'Diaspora und jüdische Nation',
@@ -118,7 +118,7 @@ class KeywordController extends \TeiEditionBundle\Controller\TopicController
      */
     public static function extractGenres($keywords)
     {
-        return array_values(array_intersect($keywords, \App\Controller\KeywordController::$GENRES));
+        return array_values(array_intersect($keywords, self::$GENRES));
     }
 
     /**
@@ -126,7 +126,7 @@ class KeywordController extends \TeiEditionBundle\Controller\TopicController
      */
     public static function extractTopics($keywords)
     {
-        return array_values(array_intersect($keywords, \App\Controller\KeywordController::$TOPICS));
+        return array_values(array_intersect($keywords, self::$TOPICS));
     }
 
     protected function buildTopicsBySlug(TranslatorInterface $translator, $translateKeys = false)
