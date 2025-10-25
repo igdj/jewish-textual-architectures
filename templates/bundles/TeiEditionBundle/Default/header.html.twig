@@ -8,18 +8,17 @@
                             <ul id="menu-lang" class="list-inline">
                             {% for locale in locales %}
                                 <li class="list-inline-item{% if locale == app.request.locale %} current{% endif %}">
-                                    {% if route_params_locale_switch is defined and route_params_locale_switch is not empty and route_params_locale_switch[locale] is defined %}
-                                        {% set route_params = route_params_locale_switch[locale] %}
+                                    {% set route = app.request.attributes.get('_route') %}
+                                    {% if route_params_locale_switch is defined  %}
+                                        {% if route_params_locale_switch is not empty and route_params_locale_switch[locale] is defined %}
+                                            {% set route_params = route_params_locale_switch[locale] %}
+                                        {% else %}
+                                            {# if article/source has no translation, go to home page in selected language #}
+                                            {% set route = 'home' %}
+                                            {% set route_params = { '_locale': locale } %}
+                                        {% endif %}
                                     {% else %}
                                         {% set route_params = app.request.attributes.get('_route_params')|merge(app.request.query.all) %}
-                                    {% endif %}
-                                    {% set route = app.request.attributes.get('_route') %}
-                                    {% if locale != app.request.locale and locale == 'en' %}
-                                        {# currently, en has limited navigation #}
-                                        {% if not (route in ['home', 'contact'] or route starts with 'about') %}
-                                            {% set route = 'home' %}
-                                            {% set route_params = {} %}
-                                        {% endif %}
                                     {% endif %}
                                     <a href="{{ path(route, route_params|merge({"_locale": locale})) }}">{{ locale }}</a>
                                 </li>
