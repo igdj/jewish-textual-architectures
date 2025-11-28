@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file date="2024-06-02T10:17:26Z" source-language="en" target-language="de" datatype="plaintext" original="not.available">
+  <file date="2025-11-28T11:42:45Z" source-language="en" target-language="de" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
@@ -112,7 +112,7 @@
       </trans-unit>
       <trans-unit id="82f9f14fd0fae886f1a381689b9f476cd582f585" resname="genre-index">
         <source>/genre</source>
-        <target state="new">/genre</target>
+        <target>/genre</target>
       </trans-unit>
       <trans-unit id="31febeb1bd09a280b286995d78260c42559c6d5a" resname="glossary-index">
         <source>/glossary</source>
@@ -261,6 +261,10 @@
       <trans-unit id="dbe6c4b16bb1c203a8a036332387ef69744731b3" resname="teiedition_bibliography_detail">
         <source>/bibliography/{id}</source>
         <target>/bibliografie/{id}</target>
+      </trans-unit>
+      <trans-unit id="ce620d6749880d79c700eb0ae2a56646f3a59bc5" resname="terms">
+        <source>/terms</source>
+        <target state="new">/nutzungsbedingungen</target>
       </trans-unit>
       <trans-unit id="11382b2dc45c0a18f2c1b76687a989ba9c1d1002" resname="topic-background">
         <source>/topic/{slug}</source>

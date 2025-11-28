@@ -64,7 +64,7 @@ class AboutController extends \TeiEditionBundle\Controller\RenderTeiController
 
     /**
      * @Route("/about", name="about")
-     * xRoute("/terms", name="terms")
+     * @Route("/terms", name="terms")
      * @Route("/contact", name="contact")
      */
     public function renderAbout(
